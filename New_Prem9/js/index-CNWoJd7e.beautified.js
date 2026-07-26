@@ -21865,7 +21865,7 @@ const l8 = {
         "ui.muted": "Unmute",
         "ui.unmuted": "Mute",
         "hero.subtitle": "We are getting married",
-        "hero.location": "Château de la Couronne, Nouvelle-Aquitaine, France | 7:00 PM",
+        "hero.location": "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt | 7:00 PM – 12:00 AM",
         "intro.tap": "Tap to open",
         "intro.loading": "Loading…",
         "intro.envelopeAlt": "Invitation envelope with wax seal",
@@ -21879,10 +21879,10 @@ special day with you.
 `,
         "welcome.p2": "",
         "welcome.rsvpBy": "Please RSVP by 28 August 2026.",
-        "welcome.time": "7:00 PM",
+        "welcome.time": "7:00 PM – 12:00 AM",
         "countdown.kicker": "",
         "countdown.title": "Countdown",
-        "countdown.subtitle": "Until 27 July 2027",
+        "countdown.subtitle": "Until 28 August 2026",
         "countdown.days": "Days",
         "countdown.hours": "Hours",
         "countdown.minutes": "Minutes",
@@ -21890,7 +21890,7 @@ special day with you.
         "details.kicker": "",
         "details.title": "Time & Location",
         "details.invited": "Join us at",
-        "details.time": "7:00 PM",
+        "details.time": "7:00 PM – 12:00 AM",
         "details.timeRange": "From {{start}} until {{end}}",
         "details.openMaps": "Open in Google Maps",
         "details.addCalendar": "Add to Calendar",
@@ -21899,7 +21899,7 @@ special day with you.
         "schedule.ceremony.time": "12:00 PM",
         "schedule.ceremony.title": "Ceremony",
         "schedule.ceremony.desc": "Garden ceremony",
-        "schedule.reception.time": "7:00 PM",
+        "schedule.reception.time": "7:00 PM – 12:00 AM",
         "schedule.reception.title": "Reception",
         "schedule.reception.desc": "Dinner and dancing",
         "dress.title": "Dress Code",
@@ -22009,11 +22009,11 @@ VILLAGES & LANDMARKS`,
         "rsvp.err.errDesc": "Could not submit your RSVP. Please try again.",
         "conf.no.title": "Thank you for letting us know",
         "conf.no.body": "We're sorry you can't join us. You'll be in our thoughts on this very special day.",
-        "conf.signature": "— Lucia & Matteo",
+        "conf.signature": "— Mohamed & Amira",
         "conf.yes.title": "Thank you for confirming",
         "conf.yes.p1": "We're so happy you'll be joining us.",
         "conf.yes.p2": "",
-        "conf.yes.p3": "We look forward to seeing you on July 27th at Château de la Couronne, Nouvelle-Aquitaine.",
+        "conf.yes.p3": "We look forward to seeing you on August 28th at Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt.",
         "conf.addCal": "Add to Calendar",
         "conf.cancelNote": "If you can no longer attend, please let us know before 28 August.",
         "footer.madeBy": "Made with love by"
@@ -22024,7 +22024,7 @@ VILLAGES & LANDMARKS`,
         "ui.muted": "Activar sonido",
         "ui.unmuted": "Silenciar",
         "hero.subtitle": "Nos casamos",
-        "hero.location": "Château de la Couronne, Nouvelle-Aquitaine, Francia | 19:00",
+        "hero.location": "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egipto | 19:00 – 00:00",
         "intro.tap": "Toca para abrir",
         "intro.loading": "Cargando…",
         "intro.envelopeAlt": "Sobre de invitación con sello de cera",
@@ -22041,7 +22041,7 @@ este día tan especial contigo.
         "welcome.time": "19:00",
         "countdown.kicker": "",
         "countdown.title": "Cuenta atrás",
-        "countdown.subtitle": "Hasta el 27 de julio de 2027",
+        "countdown.subtitle": "Hasta el 28 de agosto de 2026",
         "countdown.days": "Días",
         "countdown.hours": "Horas",
         "countdown.minutes": "Minutos",
@@ -22168,11 +22168,11 @@ PUEBLOS Y LUGARES DE INTERÉS`,
         "rsvp.err.errDesc": "No pudimos enviar tu confirmación. Inténtalo de nuevo.",
         "conf.no.title": "Gracias por avisarnos",
         "conf.no.body": "Sentimos que no puedas acompañarnos.",
-        "conf.signature": "— Lucia y Matteo",
+        "conf.signature": "— Mohamed y Amira",
         "conf.yes.title": "Gracias por confirmar",
         "conf.yes.p1": "Nos hace muchísima ilusión que vayas a acompañarnos.",
         "conf.yes.p2": "",
-        "conf.yes.p3": "Te esperamos el 27 de julio en el Château de la Couronne, Nouvelle-Aquitaine.",
+        "conf.yes.p3": "Te esperamos el 28 de agosto en Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egipto.",
         "conf.addCal": "Añadir al calendario",
         "conf.cancelNote": "Si al final no puedes asistir, avísanos antes del 28 de agosto.",
         "footer.madeBy": "Hecho con amor por"
@@ -22544,7 +22544,7 @@ const S8 = "2b66b518-489b-4982-af38-67ec60286a6d",
 
 function B8({
     date: e,
-    location: t = "Château de la Couronne, Nouvelle-Aquitaine, France",
+    location: t = "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt",
     address: n,
     mapsUrl: r,
     startTime: s = "19:00",
@@ -22552,7 +22552,7 @@ function B8({
 }) {
     const {
         t: o
-    } = ht(), a = o("welcome.kicker"), l = o("welcome.title2"), c = o("welcome.p2"), u = t || "Château de la Couronne, Nouvelle-Aquitaine, France", d = r || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(u+(n?", "+n:""))}`;
+    } = ht(), a = o("welcome.kicker"), l = o("welcome.title2"), c = o("welcome.p2"), u = t || "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt", d = r || "https://maps.app.goo.gl/CLuTgs5QUp5Kztyy7?g_st=ai";
     return p.jsxs("section", {
         className: "relative overflow-hidden bg-[hsl(var(--ivory))] py-8 md:py-12",
         children: [p.jsx("div", {
@@ -31933,7 +31933,7 @@ function h9() {
                                         value: "12 Rue de l'Exemple, 75001 Paris, France"
                                     }), p.jsx(Bo, {
                                         label: "Account Holders",
-                                        value: "Lucia Doe and Matteo Rossi"
+                                        value: "Mohamed and Amira"
                                     }), p.jsx(Bo, {
                                         label: "IBAN",
                                         value: "FR76 3000 4000 5000 6000 7000 123"
@@ -32629,17 +32629,17 @@ function W9({
     }, []);
     const r = () => {
         const s = m => m.toString().padStart(2, "0"),
-            i = new Date(Date.UTC(2027, 6, 27, 17, 0)),
-            o = new Date(Date.UTC(2027, 6, 28, 0, 0)),
+            i = new Date(Date.UTC(2026, 7, 28, 17, 0)),
+            o = new Date(Date.UTC(2026, 7, 29, 0, 0)),
             a = m => `${m.getUTCFullYear()}${s(m.getUTCMonth()+1)}${s(m.getUTCDate())}T${s(m.getUTCHours())}${s(m.getUTCMinutes())}00Z`,
-            l = "Lucia & Matteo's Wedding",
-            c = "Château de la Couronne, 16380 Marthon, France",
+            l = "Mohamed & Amira's Wedding",
+            c = "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt",
             u = /iPad|iPhone|iPod/.test(navigator.userAgent);
         if (!u) {
-            const m = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(l)}&dates=${a(i)}/${a(o)}&location=${encodeURIComponent(c)}&details=${encodeURIComponent("Lucia & Matteo's Wedding Celebration")}`;
+            const m = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(l)}&dates=${a(i)}/${a(o)}&location=${encodeURIComponent(c)}&details=${encodeURIComponent("Mohamed & Amira's Wedding Celebration")}`;
             if (window.open(m, "_blank", "noopener,noreferrer")) return
         }
-        const d = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lucia-Matteo//Wedding//EN", "BEGIN:VEVENT", `UID:${Date.now()}@lucia-matteo-wedding`, `DTSTAMP:${a(new Date)}`, `DTSTART:${a(i)}`, `DTEND:${a(o)}`, `SUMMARY:${l}`, `LOCATION:${c}`, "DESCRIPTION:Lucia & Matteo's Wedding Celebration", "END:VEVENT", "END:VCALENDAR"].join(`\r
+        const d = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Mohamed-Amira//Wedding//EN", "BEGIN:VEVENT", `UID:${Date.now()}@mohamed-amira-wedding`, `DTSTAMP:${a(new Date)}`, `DTSTART:${a(i)}`, `DTEND:${a(o)}`, `SUMMARY:${l}`, `LOCATION:${c}`, "DESCRIPTION:Mohamed & Amira's Wedding Celebration", "END:VEVENT", "END:VCALENDAR"].join(`\r
 `);
         if (u) {
             const m = `data:text/calendar;charset=utf-8,${encodeURIComponent(d)}`;
@@ -32651,7 +32651,7 @@ function W9({
             }),
             f = URL.createObjectURL(h),
             w = document.createElement("a");
-        w.href = f, w.download = "lucia-matteo-wedding.ics", document.body.appendChild(w), w.click(), document.body.removeChild(w), setTimeout(() => URL.revokeObjectURL(f), 1e3)
+        w.href = f, w.download = "mohamed-amira-wedding.ics", document.body.appendChild(w), w.click(), document.body.removeChild(w), setTimeout(() => URL.revokeObjectURL(f), 1e3)
     };
     return e === "no" ? p.jsx("section", {
         id: "rsvp",
@@ -33875,18 +33875,13 @@ const nz = "4eb245b4-1929-45cc-b854-c19be74b61fc",
                 })
             },
             c = e || {
-                couple_name_1: "Lucia",
-                couple_name_2: "Matteo",
-                wedding_date: "2027-07-27",
+                couple_name_1: "Mohamed",
+                couple_name_2: "Amira",
+                wedding_date: "2026-08-28",
                 hero_subtitle: null,
-                banquet_location: `Château de la Couronne,
-Nouvelle-Aquitaine, France
-`,
-                banquet_address: `16380 Marthon,
-Charente, France
-
-`,
-                banquet_maps_url: "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau+de+la+Couronne+Marthon"
+                banquet_location: "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt",
+                banquet_address: "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt",
+                banquet_maps_url: "https://maps.app.goo.gl/CLuTgs5QUp5Kztyy7?g_st=ai"
             };
         return p.jsxs(p.Fragment, {
             children: [p.jsx("button", {
@@ -33925,7 +33920,7 @@ Charente, France
                     address: c.banquet_address,
                     mapsUrl: c.banquet_maps_url,
                     startTime: "19:00",
-                    endTime: "02:00"
+                    endTime: "00:00"
                 }), p.jsx(uL, {
                     targetDate: c.wedding_date
                 }), p.jsx(xL, {}), p.jsx(DF, {}), p.jsx(OL, {}), p.jsx(d3, {}), p.jsx(m9, {}), p.jsx(h9, {}), p.jsx(_V, {}), p.jsx(IV, {
