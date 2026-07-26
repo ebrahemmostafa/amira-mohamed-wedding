@@ -22219,7 +22219,7 @@ function ht() {
 const d8 = 1,
     h8 = "b5865835-bb32-4e13-b21d-458f22ba7efc",
     f8 = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
-    p8 = "assets/l5e-videos/hero-bg.mp4",
+    p8 = "assets/l5e-videos/hero-bg.mp4?v=hero20260727",
     m8 = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/b5865835-bb32-4e13-b21d-458f22ba7efc/hero-bg.mp4",
     g8 = "hero-bg.mp4",
     v8 = 17444023,
@@ -22236,7 +22236,7 @@ const d8 = 1,
         content_type: y8,
         created_at: w8
     },
-    rw = "assets/l5e-images/hero-poster-DsqR-n3x.jpg";
+    rw = "assets/l5e-images/hero-poster-DsqR-n3x.jpg?v=hero20260727";
 
 function x8(e, t) {
     const [n, r, s] = e.split("-").map(Number), i = new Date(Date.UTC(n, r - 1, s));
