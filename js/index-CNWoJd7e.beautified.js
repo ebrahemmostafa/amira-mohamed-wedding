@@ -35922,6 +35922,7 @@ const W7 = () => {
             children: p.jsx(u8, {
                 children: p.jsxs(HN, {
                     children: [p.jsx(TA, {}), p.jsx(ij, {}), p.jsx(xI, {
+                        basename: "/amira-mohamed-wedding",
                         children: p.jsxs(pI, {
                             children: [p.jsx(Go, {
                                 path: "/",
