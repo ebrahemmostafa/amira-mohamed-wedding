@@ -22987,7 +22987,7 @@ const dL = "ed62a578-1b0c-4fe9-bd98-5c72e42ea515",
     mL = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
     gL = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/ed62a578-1b0c-4fe9-bd98-5c72e42ea515/fan.png",
     vL = 86740,
-    yL = "assets/l5e-images/fan.png",
+    yL = "assets/l5e-images/fan.png?v=fan20260727",
     wL = 1,
     bL = {
         asset_id: dL,
