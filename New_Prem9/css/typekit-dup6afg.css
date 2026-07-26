@@ -1,3 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
+
+@font-face {
+  font-family: 'Bickham Script Pro';
+  src: local('Bickham Script Pro'), local('BickhamScriptPro-Regular'), local('Bickham Script'), url('https://fonts.gstatic.com/s/pinyonscript/v22/6xKtdSBYb9b-nJOYCn4yciH21WK7.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bickham Script';
+  src: local('Bickham Script Pro'), local('BickhamScriptPro-Regular'), local('Bickham Script'), url('https://fonts.gstatic.com/s/pinyonscript/v22/6xKtdSBYb9b-nJOYCn4yciH21WK7.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
  * is provided by Adobe and is subject to these Terms of Use

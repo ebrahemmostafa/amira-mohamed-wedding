@@ -405,8 +405,8 @@ video {
     --sidebar-accent-foreground: 340 24% 28%;
     --sidebar-border: 38 30% 82%;
     --sidebar-ring: 330 85% 60%;
-    --font-display: 'Bickham Script Pro', 'Bickham Script', 'classic-script-mn', 'span', 'Cormorant Garamond', cursive, serif;
-    --font-script: 'Bickham Script Pro', 'Bickham Script', 'classic-script-mn', 'span', 'Cormorant Garamond', cursive, serif;
+    --font-display: 'Bickham Script Pro', 'Bickham Script', 'Pinyon Script', 'Great Vibes', 'Alex Brush', 'classic-script-mn', 'span', 'Cormorant Garamond', cursive, serif;
+    --font-script: 'Bickham Script Pro', 'Bickham Script', 'Pinyon Script', 'Great Vibes', 'Alex Brush', 'classic-script-mn', 'span', 'Cormorant Garamond', cursive, serif;
     --font-body: '"Cormorant Garamond"', serif;
     --transition-smooth: all .4s cubic-bezier(.4, 0, .2, 1);
     --shadow-soft: 0 2px 18px -6px rgba(139, 91, 110, .1);
