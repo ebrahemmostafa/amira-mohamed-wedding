@@ -22020,128 +22020,128 @@ VILLAGES & LANDMARKS`,
     },
     c8 = {
         "lang.english": "English",
-        "lang.spanish": "Español",
-        "ui.muted": "Activar sonido",
-        "ui.unmuted": "Silenciar",
-        "hero.subtitle": "Nos casamos",
-        "hero.location": "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egipto | 19:00 – 00:00",
-        "intro.tap": "Toca para abrir",
-        "intro.loading": "Cargando…",
-        "intro.envelopeAlt": "Sobre de invitación con sello de cera",
+        "lang.spanish": "العربية",
+        "lang.arabic": "العربية",
+        "ui.muted": "تشغيل الصوت",
+        "ui.unmuted": "كتم الصوت",
+        "hero.subtitle": "حفل زفافنا",
+        "hero.location": "قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر | 7:00 مساءً – 12:00 منتصف الليل",
+        "intro.tap": "اضغط للفتح",
+        "intro.loading": "جاري التحميل…",
+        "intro.envelopeAlt": "ظرف دعوة زفاف",
         "welcome.kicker": "",
-        "welcome.title1": `Acompáñanos a celebrar
-nuestra boda
-`,
+        "welcome.title1": "يسعدنا ويشرفنا دعوتكم
+لحضور حفل زفافنا
+",
         "welcome.title2": "",
-        "welcome.p1": `Nos hace muchísima ilusión celebrar
-este día tan especial contigo.
-`,
+        "welcome.p1": "تكتمل فرحتنا بحضوركم ومشاركتكم
+لنا في هذا اليوم المميز.
+",
         "welcome.p2": "",
-        "welcome.rsvpBy": "Por favor, confirma tu asistencia antes del 28 de agosto de 2026.",
-        "welcome.time": "19:00",
+        "welcome.rsvpBy": "يرجى تأكيد الحضور قبل 28 أغسطس 2026.",
+        "welcome.time": "7:00 مساءً – 12:00 منتصف الليل",
         "countdown.kicker": "",
-        "countdown.title": "Cuenta atrás",
-        "countdown.subtitle": "Hasta el 28 de agosto de 2026",
-        "countdown.days": "Días",
-        "countdown.hours": "Horas",
-        "countdown.minutes": "Minutos",
-        "countdown.seconds": "Segundos",
+        "countdown.title": "العد التنازلي",
+        "countdown.subtitle": "حتى 28 أغسطس 2026",
+        "countdown.days": "أيام",
+        "countdown.hours": "ساعات",
+        "countdown.minutes": "دقائق",
+        "countdown.seconds": "ثواني",
         "details.kicker": "",
-        "details.title": "Hora y lugar",
-        "details.invited": "Te esperamos en",
-        "details.time": "19:00",
-        "details.timeRange": "De {{start}} a {{end}}",
-        "details.openMaps": "Abrir en Google Maps",
-        "details.addCalendar": "Añadir al calendario",
+        "details.title": "الزمان والمكان",
+        "details.invited": "ننتظركم في",
+        "details.time": "7:00 مساءً – 12:00 منتصف الليل",
+        "details.timeRange": "من {{start}} إلى {{end}}",
+        "details.openMaps": "فتح في خرائط جوجل",
+        "details.addCalendar": "إضافة إلى التقويم",
         "schedule.kicker": "",
-        "schedule.title": "Programa",
+        "schedule.title": "برنامج الحفل",
         "schedule.ceremony.time": "12:00",
-        "schedule.ceremony.title": "Ceremonia",
-        "schedule.ceremony.desc": "Ceremonia en el jardín",
-        "schedule.reception.time": "19:00",
-        "schedule.reception.title": "Recepción",
-        "schedule.reception.desc": "Cena y baile",
-        "dress.title": "Código de vestimenta",
-        "dress.subtitle": "Etiqueta rigurosa · Black-Tie",
+        "schedule.ceremony.title": "مراسم الزفاف",
+        "schedule.ceremony.desc": "مراسم الزفاف في الحديقة",
+        "schedule.reception.time": "7:00 مساءً",
+        "schedule.reception.title": "حفل الزفاف",
+        "schedule.reception.desc": "عشاء واحتفال",
+        "dress.title": "قواعد المظهر",
+        "dress.subtitle": "ملابس رسمية · Black-Tie",
         "dress.formal.title": "",
-        "dress.formal.desc": "En el espíritu de una velada a la luz de las velas en el château, os invitamos a vestir vuestra etiqueta más refinada. Caballeros en esmoquin o traje oscuro formal; damas en vestido largo o cóctel elegante.",
+        "dress.formal.desc": "يسعدنا حضوركم بأجمل إطلالاتكم الرسمية لمشاركتنا هذه الليلة المميزة. بدلات رسمية للرجال وفساتين سهرة أنيقة للسيدات.",
         "dress.note.title": "",
-        "dress.note.desc": "Elegid tonos románticos y suaves — champán, empolvado, azul polvoriento, salvia, ciruela y medianoche — y calzado cómodo para el césped y la gravilla, que os permita bailar hasta el amanecer. Por favor, reservad el marfil y el blanco roto para la novia.",
-        "hotels.title": "Dónde alojarse",
-        "hotels.subtitle": "Opciones cercanas para nuestros invitados",
-        "hotels.view": "Ver hotel",
-        "hotels.1.tier": "Ultra lujo · Massignac",
-        "hotels.1.note": "Un sereno resort a orillas del lago, a pocos minutos del château.",
-        "hotels.1.distance": "20 min en coche desde la finca",
-        "hotels.2.tier": "Refinado · Cognac",
-        "hotels.2.note": "Elegante hotel de 5 estrellas en el corazón histórico de Cognac.",
-        "hotels.2.distance": "45 min en coche desde la finca",
-        "hotels.3.tier": "Clásico · Angulema",
-        "hotels.3.note": "Hotel céntrico en Angulema, una base cómoda para descubrir la región.",
-        "hotels.3.distance": "35 min en coche desde la finca",
-        "dubai.title": "Descubre Nouvelle-Aquitaine",
-        "dubai.subtitle": "Algunos lugares para tu visita",
-        "dubai.1.name": "Casco antiguo de Angulema",
-        "dubai.1.type": "Murallas históricas",
-        "dubai.2.name": "Cognac",
-        "dubai.2.type": "Bodegas y catas de coñac",
-        "dubai.3.name": "Aubeterre-sur-Dronne",
-        "dubai.3.type": "Uno de los pueblos más bonitos de Francia",
-        "dubai.4.name": "Périgueux",
-        "dubai.4.type": "Ciudad medieval de mercado",
-        "dubai.5.name": "Burdeos",
-        "dubai.5.type": "Capital del vino",
-        "dubai.6.name": "Valle de la Dordoña",
-        "dubai.6.type": "Castillos y cuevas",
-        "dubai.cat.restaurants": "Restaurantes y cafés",
-        "dubai.cat.shopping": "Compras",
-        "dubai.cat.pools": `
-PUEBLOS Y LUGARES DE INTERÉS`,
-        "dubai.type.cafe": "Café",
-        "dubai.type.restaurant": "Restaurante",
-        "dubai.type.shopping": "Compras",
-        "dubai.type.pool": "Piscina y club de playa",
-        "dubai.type.beach": "Club de playa",
-        "dubai.type.rooftop": "Piscina en la azotea",
-        "beauty.title": "Servicios de belleza",
-        "beauty.subtitle": "Peluquerías y estética cerca",
-        "beauty.visit": "Visitar sitio web",
-        "beauty.1.name": "Peluquería y maquillaje",
-        "beauty.1.place": "Dessange — Angulema",
-        "beauty.1.note": "Reconocido salón francés para peinado y maquillaje de novia. Reserva con antelación.",
-        "beauty.2.name": "Barbería y estética",
-        "beauty.2.place": "Camille Albane — Angulema",
-        "beauty.2.note": "Salón refinado a poca distancia en coche del château.",
-        "faq.title": "Preguntas frecuentes",
+        "dress.note.desc": "نرجو اختيار ألوان ناعمة وأنيقة، وترك اللون الأبيض والعاجي للعروس.",
+        "hotels.title": "أماكن الإقامة",
+        "hotels.subtitle": "خيارات قريبة لضيوفنا",
+        "hotels.view": "عرض الفندق",
+        "hotels.1.tier": "",
+        "hotels.1.note": "",
+        "hotels.1.distance": "",
+        "hotels.2.tier": "",
+        "hotels.2.note": "",
+        "hotels.2.distance": "",
+        "hotels.3.tier": "",
+        "hotels.3.note": "",
+        "hotels.3.distance": "",
+        "dubai.title": "معالم المنطقة",
+        "dubai.subtitle": "",
+        "dubai.1.name": "",
+        "dubai.1.type": "",
+        "dubai.2.name": "",
+        "dubai.2.type": "",
+        "dubai.3.name": "",
+        "dubai.3.type": "",
+        "dubai.4.name": "",
+        "dubai.4.type": "",
+        "dubai.5.name": "",
+        "dubai.5.type": "",
+        "dubai.6.name": "",
+        "dubai.6.type": "",
+        "dubai.cat.restaurants": "",
+        "dubai.cat.shopping": "",
+        "dubai.cat.pools": "",
+        "dubai.type.cafe": "",
+        "dubai.type.restaurant": "",
+        "dubai.type.shopping": "",
+        "dubai.type.pool": "",
+        "dubai.type.beach": "",
+        "dubai.type.rooftop": "",
+        "beauty.title": "خدمات التجميل",
+        "beauty.subtitle": "",
+        "beauty.visit": "",
+        "beauty.1.name": "",
+        "beauty.1.place": "",
+        "beauty.1.note": "",
+        "beauty.2.name": "",
+        "beauty.2.place": "",
+        "beauty.2.note": "",
+        "faq.title": "الأسئلة الشائعة",
         "faq.subtitle": "",
-        "gifts.title": "Regalos",
+        "gifts.title": "الهدايا",
         "gifts.kicker": "",
-        "gifts.intro": "Vuestra presencia es el mejor regalo — tenerte a nuestro lado en este día es más que suficiente. Si aun así deseas hacernos un regalo, aquí tienes los datos:",
+        "gifts.intro": "",
         "gifts.account": "",
         "gifts.cash": "",
         "gifts.bank": "",
         "rsvp.kicker": "",
-        "rsvp.title": "Confirmación",
-        "rsvp.deadline.before": "Por favor, responde antes del ",
-        "rsvp.deadline.date": "28 de agosto de 2026",
+        "rsvp.title": "تأكيد الحضور",
+        "rsvp.deadline.before": "يرجى الرد قبل ",
+        "rsvp.deadline.date": "28 أغسطس 2026",
         "rsvp.deadline.after": ".",
-        "rsvp.attend": "¿Vas a asistir? *",
-        "rsvp.yes": "Sí, allí estaré",
-        "rsvp.no": "Lo siento, no podré ir",
-        "rsvp.fullName": "Nombre completo *",
-        "rsvp.fullNamePh": "Tu nombre completo",
+        "rsvp.attend": "هل ستحضر؟ *",
+        "rsvp.yes": "نعم، سأحضر بكل سرور",
+        "rsvp.no": "نعتذر، لن نتمكن من الحضور",
+        "rsvp.fullName": "الاسم الكامل *",
+        "rsvp.fullNamePh": "اكتب اسمك الكامل",
         "rsvp.allergies": "",
         "rsvp.allergiesPh": "",
         "rsvp.phone": "",
         "rsvp.phonePh": "",
         "rsvp.noTitle": "",
         "rsvp.noSub": "",
-        "rsvp.companionName": "Su nombre completo",
+        "rsvp.companionName": "اسم المرافق الكامل",
         "rsvp.addPerson": "",
-        "rsvp.companions": "¿Te acompañará tu pareja?",
+        "rsvp.companions": "هل سيرافقك شريك/ة؟",
         "rsvp.companionsDesc": "",
-        "rsvp.so.yes": "Sí",
-        "rsvp.so.no": "No",
+        "rsvp.so.yes": "نعم",
+        "rsvp.so.no": "لا",
         "rsvp.adult": "",
         "rsvp.adults": "",
         "rsvp.adult1": "",
@@ -22156,30 +22156,31 @@ PUEBLOS Y LUGARES DE INTERÉS`,
         "rsvp.songPh": "",
         "rsvp.message": "",
         "rsvp.messagePh": "",
-        "rsvp.send": "Enviar confirmación",
-        "rsvp.sending": "Enviando…",
-        "rsvp.err.nameTitle": "Nombre obligatorio",
-        "rsvp.err.nameDesc": "Por favor, introduce tu nombre completo.",
+        "rsvp.send": "إرسال تأكيد الحضور",
+        "rsvp.sending": "جاري الإرسال…",
+        "rsvp.err.nameTitle": "الاسم مطلوب",
+        "rsvp.err.nameDesc": "يرجى كتابة اسمك الكامل.",
         "rsvp.err.phoneTitle": "",
         "rsvp.err.phoneDesc": "",
-        "rsvp.err.compNamesTitle": "Nombres obligatorios",
-        "rsvp.err.compNamesDesc": "Por favor, introduce los nombres de todos los invitados.",
-        "rsvp.err.errTitle": "Error",
-        "rsvp.err.errDesc": "No pudimos enviar tu confirmación. Inténtalo de nuevo.",
-        "conf.no.title": "Gracias por avisarnos",
-        "conf.no.body": "Sentimos que no puedas acompañarnos.",
-        "conf.signature": "— Mohamed y Amira",
-        "conf.yes.title": "Gracias por confirmar",
-        "conf.yes.p1": "Nos hace muchísima ilusión que vayas a acompañarnos.",
+        "rsvp.err.compNamesTitle": "أسماء المرافقين مطلوبة",
+        "rsvp.err.compNamesDesc": "يرجى كتابة أسماء جميع المدعوين.",
+        "rsvp.err.errTitle": "خطأ",
+        "rsvp.err.errDesc": "تعذر إرسال التأكيد. يرجى المحاولة مرة أخرى.",
+        "conf.no.title": "شكراً لإعلامنا",
+        "conf.no.body": "نعتذر لعدم تمكنكم من الحضور، ستكونون في قلوبنا في هذا اليوم المميز.",
+        "conf.signature": "— محمد وأميرة",
+        "conf.yes.title": "شكراً لتأكيد حضوركم",
+        "conf.yes.p1": "يسعدنا جداً حضوركم ومشاركتنا فرحتنا.",
         "conf.yes.p2": "",
-        "conf.yes.p3": "Te esperamos el 28 de agosto en Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egipto.",
-        "conf.addCal": "Añadir al calendario",
-        "conf.cancelNote": "Si al final no puedes asistir, avísanos antes del 28 de agosto.",
-        "footer.madeBy": "Hecho con amor por"
+        "conf.yes.p3": "ننتظركم يوم 28 أغسطس في قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر.",
+        "conf.addCal": "إضافة إلى التقويم",
+        "conf.cancelNote": "إذا تعذر عليكم الحضور لاحقاً، يرجى إعلامنا قبل 28 أغسطس.",
+        "footer.madeBy": "صنع بكل حب بواسطة"
     },
     nw = {
         en: l8,
-        es: c8
+        es: c8,
+        ar: c8
     },
     $E = g.createContext(null);
 
@@ -22189,10 +22190,10 @@ function u8({
     const [t, n] = g.useState(() => {
         if (typeof window > "u") return "en";
         const s = window.localStorage.getItem("lang");
-        return s === "es" || s === "en" ? s : "en"
+        return s === "ar" || s === "es" || s === "en" ? (s === "es" ? "ar" : s) : "en"
     });
     g.useEffect(() => {
-        document.documentElement.lang = t, document.documentElement.dir = "ltr", window.localStorage.setItem("lang", t)
+        const isAr = t === "ar" || t === "es"; document.documentElement.lang = isAr ? "ar" : "en", document.documentElement.dir = isAr ? "rtl" : "ltr", window.localStorage.setItem("lang", isAr ? "ar" : t)
     }, [t]);
     const r = (s, i) => {
         let o = nw[t][s] ?? nw.en[s] ?? s;
@@ -22205,7 +22206,7 @@ function u8({
             lang: t,
             setLang: n,
             t: r,
-            dir: "ltr"
+            dir: t === "ar" || t === "es" ? "rtl" : "ltr"
         },
         children: e
     })
@@ -22240,7 +22241,7 @@ const d8 = 1,
 
 function x8(e, t) {
     const [n, r, s] = e.split("-").map(Number), i = new Date(Date.UTC(n, r - 1, s));
-    return new Intl.DateTimeFormat(t === "es" ? "es-ES" : "en-GB", {
+    return new Intl.DateTimeFormat(t === "ar" || t === "es" ? "ar-EG" : "en-GB", {
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -22390,7 +22391,7 @@ function _8({
                             delay: .7
                         },
                         className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-[hsl(var(--gold))] mb-5",
-                        children: o === "es" ? "La boda de" : "The Wedding of"
+                        children: o === "ar" || o === "es" ? "حفل زفاف" : "The Wedding of"
                     }), p.jsxs(z.h1, {
                         initial: {
                             opacity: 0,
@@ -31567,16 +31568,16 @@ const mF = 1,
     },
     $F = {
         "When should I RSVP by?": {
-            q: "¿Cuándo debo confirmar mi asistencia?",
-            a: "Por favor, confirma antes del 28 de agosto de 2026."
+            q: "متى يجب تأكيد الحضور؟",
+            a: "يرجى تأكيد الحضور قبل 28 أغسطس 2026."
         },
         "When should I arrive?": {
-            q: "¿A qué hora debo llegar?",
-            a: "Por favor, llega a las 19:00."
+            q: "متى يجب الوصول؟",
+            a: "يرجى الوصول في تمام الساعة 7:00 مساءً."
         },
         "Are kids welcome?": {
-            q: "¿Los niños son bienvenidos?",
-            a: "Con todo el cariño a vuestros pequeños, esta celebración es solo para adultos."
+            q: "هل يمكن اصطحاب الأطفال؟",
+            a: "مع خالص حبنا لأطفالكم، هذا الحفل مخصص للكبار فقط."
         }
     };
 
@@ -31641,7 +31642,7 @@ function DF() {
                     collapsible: !0,
                     className: "space-y-4",
                     children: e.map(s => {
-                        const i = r === "es" ? $F[s.question] : void 0;
+                        const i = r === "ar" || r === "es" ? $F[s.question] : void 0;
                         return p.jsxs(eC, {
                             value: s.id,
                             className: "royal-card px-6",
@@ -33094,7 +33095,7 @@ const SV = 1,
 
 function OV(e, t) {
     const [n, r, s] = e.split("-").map(Number), i = new Date(Date.UTC(n, r - 1, s));
-    return new Intl.DateTimeFormat(t === "es" ? "es-ES" : "en-US", {
+    return new Intl.DateTimeFormat(t === "ar" || t === "es" ? "ar-EG" : "en-US", {
         month: "long",
         day: "numeric",
         year: "numeric",
@@ -33808,14 +33809,14 @@ function ez() {
         className: `px-2.5 py-1 text-[11px] tracking-[0.2em] uppercase font-body transition-colors ${e===r?"text-[hsl(var(--ivory))] bg-[hsl(var(--plum))]":"text-[hsl(var(--plum))] hover:bg-[hsl(var(--candlelight))]/30"}`,
         "aria-pressed": e === r,
         "aria-label": `Switch to ${s}`,
-        children: r === "es" ? "ES" : "EN"
+        children: r === "ar" || r === "es" ? "AR" : "EN"
     }, r);
     return p.jsxs("div", {
         dir: "ltr",
         className: "fixed top-4 right-4 z-[60] flex items-center rounded-sm border border-[hsl(var(--antique-gold))]/50 bg-[hsl(var(--ivory))]/85 backdrop-blur-md shadow-soft overflow-hidden",
         children: [n("en", "English"), p.jsx("span", {
             className: "w-px h-4 bg-[hsl(var(--antique-gold))]/40"
-        }), n("es", "Spanish")]
+        }), n("ar", "العربية")]
     })
 }
 
