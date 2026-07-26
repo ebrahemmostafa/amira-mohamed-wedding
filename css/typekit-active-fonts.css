@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
+
+@font-face {
+  font-family: 'Snell Roundhand';
+  src: local('Snell Roundhand'), local('SnellRoundhand'), local('Snell Roundhand Script'), local('SnellRoundhand-Regular'), url('https://fonts.gstatic.com/s/corinthia/v14/w8gdH2QeQ1n38VbspL2h1eM.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Snell Roundhand Script';
+  src: local('Snell Roundhand'), local('SnellRoundhand'), local('Snell Roundhand Script'), local('SnellRoundhand-Regular'), url('https://fonts.gstatic.com/s/corinthia/v14/w8gdH2QeQ1n38VbspL2h1eM.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
 
