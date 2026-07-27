@@ -22059,7 +22059,7 @@ VILLAGES & LANDMARKS`,
         "schedule.reception.title": "حفل الزفاف",
         "schedule.reception.desc": "عشاء واحتفال",
         "dress.title": "قواعد المظهر",
-        "dress.subtitle": "ملابس رسمية · Black-Tie",
+        "dress.subtitle": "ملابس رسمية أنيقة",
         "dress.formal.title": "",
         "dress.formal.desc": "يسعدنا حضوركم بأجمل إطلالاتكم الرسمية لمشاركتنا هذه الليلة المميزة. بدلات رسمية للرجال وفساتين سهرة أنيقة للسيدات.",
         "dress.note.title": "",
@@ -22404,16 +22404,16 @@ function _8({
                         className: "font-display italic font-light text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]",
                         children: [p.jsx("span", {
                             className: "block",
-                            children: e
+                            children: o === "ar" || o === "es" ? "محمد" : e
                         }), p.jsx("span", {
                             className: "block not-italic font-serif text-[0.42em] my-1 text-[hsl(var(--plum))]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
-                            children: "&"
+                            children: o === "ar" || o === "es" ? "و" : "&"
                         }), p.jsx("span", {
                             className: "block",
-                            children: t
+                            children: o === "ar" || o === "es" ? "أميرة" : t
                         })]
                     }), p.jsx(z.div, {
                         initial: {
@@ -22458,7 +22458,7 @@ function _8({
                             delay: 1.4
                         },
                         className: "font-display italic text-base md:text-lg text-[hsl(var(--plum))]/75 mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
-                        children: s
+                        children: o === "ar" || o === "es" ? "قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر" : s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,
                         initial: {
@@ -22549,7 +22549,7 @@ function B8({
 }) {
     const {
         t: o
-    } = ht(), a = o("welcome.kicker"), l = o("welcome.title2"), c = o("welcome.p2"), u = t || "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt", d = r || "https://maps.app.goo.gl/CLuTgs5QUp5Kztyy7?g_st=ai";
+    } = ht(), a = o("welcome.kicker"), l = o("welcome.title2"), c = o("welcome.p2"), u = (s === "ar" || s === "es") ? "قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر" : (t || "Ociel hall, Talkha City, Mansoura, Dakahlia Governorate, Egypt"), d = r || "https://maps.app.goo.gl/CLuTgs5QUp5Kztyy7?g_st=ai";
     return p.jsxs("section", {
         className: "relative overflow-hidden bg-[hsl(var(--ivory))] py-8 md:py-12",
         children: [p.jsx("div", {
@@ -33017,13 +33017,13 @@ function _V() {
                     children: [p.jsx(wn, {
                         htmlFor: "message",
                         className: "text-[hsl(var(--plum))] font-display tracking-wide text-base",
-                        children: "A message for the couple"
+                        children: (ht().lang === "ar" || ht().lang === "es") ? "رسالة للعروسين" : "A message for the couple"
                     }), p.jsx(EC, {
                         id: "message",
                         value: d,
                         onChange: _ => h(_.target.value),
                         className: "mt-2 royal-input px-3 py-2 min-h-[120px] resize-none",
-                        placeholder: "Share a wish, a memory, or a note…",
+                        placeholder: (ht().lang === "ar" || ht().lang === "es") ? "شاركنا أمنية، أو ذكرى، أو تهنئة..." : "Share a wish, a memory, or a note…",
                         maxLength: 1e3
                     })]
                 }), p.jsx(Wn, {
@@ -33129,7 +33129,7 @@ function IV({
                 className: "pointer-events-none select-none w-28 md:w-36 mb-4 opacity-95"
             }), p.jsxs("p", {
                 className: "font-display italic text-2xl md:text-3xl text-[hsl(var(--plum))] mb-1",
-                children: [e, " & ", t]
+                children: [s === "ar" || s === "es" ? "محمد" : e, s === "ar" || s === "es" ? " و " : " & ", s === "ar" || s === "es" ? "أميرة" : t]
             }), p.jsx("p", {
                 className: "text-sm text-[hsl(var(--plum))]/90 font-body tracking-[0.3em] uppercase",
                 children: i
