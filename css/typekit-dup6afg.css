@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
+@import url("https://p.typekit.net/p.css?s=1&k=dup6afg&ht=tk&f=44311.57139&a=88056013&app=typekit&e=css");
+
+
 @font-face {
   font-family: 'Symphonie Calligraphy';
   src: url('../assets/fonts/SymphonieCalligraphyDEMO-Regular.otf') format('opentype');
@@ -5,8 +10,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
 
 @font-face {
   font-family: 'Snell Roundhand';
@@ -32,14 +35,12 @@
   font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
 
 
 
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Alex+Brush&display=swap');
 
 @font-face {
   font-family: 'Bickham Script Pro';
@@ -72,7 +73,6 @@
  */
 /*{"last_published":"2026-03-06 22:18:14 UTC"}*/
 
-@import url("https://p.typekit.net/p.css?s=1&k=dup6afg&ht=tk&f=44311.57139&a=88056013&app=typekit&e=css");
 
 @font-face {
 font-family:"span";
