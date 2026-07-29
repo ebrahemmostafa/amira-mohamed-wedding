@@ -33672,10 +33672,11 @@ const OB = 1,
     }) => {
         const {
             t: n
-        } = ht(), [r, s] = g.useState("idle"), i = g.useRef(null);
+        } = ht(), [r, s] = g.useState("idle"), i = g.useRef(null), i2 = g.useRef(null);
         g.useEffect(() => {
-            const u = i.current;
-            u && (u.preload = "auto", u.load())
+            const u = i.current, u2 = i2.current;
+            u && (u.preload = "auto", u.load());
+            u2 && (u2.preload = "auto", u2.load())
         }, []);
         const o = () => {
                 if (r !== "idle") return;
@@ -33694,6 +33695,21 @@ const OB = 1,
                 s("idle")
             },
             c = () => {
+                s("door_loading");
+                const u2 = i2.current;
+                if (u2) {
+                    u2.currentTime = 0;
+                    u2.play().catch(() => {
+                        s("fading")
+                    });
+                } else {
+                    s("fading");
+                }
+            },
+            a2 = () => {
+                s("door");
+            },
+            c2 = () => {
                 s("fading")
             };
         return p.jsx(qS, {
@@ -33716,11 +33732,28 @@ const OB = 1,
                     src: BB.url,
                     className: "absolute inset-0 h-full w-full object-cover",
                     style: {
-                        opacity: r === "idle" || r === "loading" ? 0 : 1
+                        opacity: r === "playing" || r === "door_loading" ? 1 : 0
                     },
                     onPlaying: a,
                     onEnded: c,
                     onError: l,
+                    playsInline: !0,
+                    muted: !0,
+                    controls: !1,
+                    disablePictureInPicture: !0,
+                    "webkit-playsinline": "true",
+                    "x-webkit-airplay": "deny",
+                    preload: "auto"
+                }), p.jsx("video", {
+                    ref: i2,
+                    src: "assets/l5e-videos/Door_opened_pink_version.mp4?v=20260729",
+                    className: "absolute inset-0 h-full w-full object-cover",
+                    style: {
+                        opacity: r === "door" ? 1 : 0
+                    },
+                    onPlaying: a2,
+                    onEnded: c2,
+                    onError: c2,
                     playsInline: !0,
                     muted: !0,
                     controls: !1,
