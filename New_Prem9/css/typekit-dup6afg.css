@@ -80,3 +80,24 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 
 .tk-span { font-family: "span",serif; }
 .tk-classic-script-mn { font-family: "classic-script-mn",sans-serif; }
+
+@font-face {
+  font-family: 'Symphonie Calligraphy';
+  src: url('../assets/fonts/SymphonieCalligraphyDEMO-Regular.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 *,
+.font-display, .font-display *, .font-script, .font-script *, .font-signature, .font-signature *,
+[dir="rtl"] h1, [dir="rtl"] h1 *, [dir="rtl"] h2, [dir="rtl"] h2 *, [dir="rtl"] h3, [dir="rtl"] h3 *,
+[dir="rtl"] h4, [dir="rtl"] h4 *, [dir="rtl"] h5, [dir="rtl"] h5 *, [dir="rtl"] h6, [dir="rtl"] h6 *,
+[dir="rtl"] .font-display, [dir="rtl"] .font-display *, [dir="rtl"] .font-script, [dir="rtl"] .font-script *,
+[dir="rtl"] .font-signature, [dir="rtl"] .font-signature *,
+[dir="ltr"] h1, [dir="ltr"] h1 *, [dir="ltr"] h2, [dir="ltr"] h2 *, [dir="ltr"] h3, [dir="ltr"] h3 *,
+[dir="ltr"] h4, [dir="ltr"] h4 *, [dir="ltr"] h5, [dir="ltr"] h5 *, [dir="ltr"] h6, [dir="ltr"] h6 *,
+[dir="ltr"] .font-display, [dir="ltr"] .font-display *, [dir="ltr"] .font-script, [dir="ltr"] .font-script *,
+[dir="ltr"] .font-signature, [dir="ltr"] .font-signature * {
+  font-family: 'Symphonie Calligraphy', 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', cursive, serif !important;
+}

@@ -405,8 +405,8 @@ video {
     --sidebar-accent-foreground: 340 24% 28%;
     --sidebar-border: 38 30% 82%;
     --sidebar-ring: 330 85% 60%;
-    --font-display: 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', 'Bickham Script Pro', 'Bickham Script', cursive, serif;
-    --font-script: 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', 'Bickham Script Pro', 'Bickham Script', cursive, serif;
+    --font-display: 'Symphonie Calligraphy', 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', 'Bickham Script Pro', 'Bickham Script', cursive, serif;
+    --font-script: 'Symphonie Calligraphy', 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', 'Bickham Script Pro', 'Bickham Script', cursive, serif;
     --font-body: '"Cormorant Garamond"', serif;
     --transition-smooth: all .4s cubic-bezier(.4, 0, .2, 1);
     --shadow-soft: 0 2px 18px -6px rgba(139, 91, 110, .1);
