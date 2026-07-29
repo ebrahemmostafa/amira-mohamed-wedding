@@ -50,16 +50,3 @@
 }
 
 /**/
-
-@font-face {
-  font-family: 'Symphonie Calligraphy';
-  src: url('../assets/fonts/SymphonieCalligraphyDEMO-Regular.otf') format('opentype');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-*, *::before, *::after, body, html, h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select, label, li, ul, ol, table, td, th, .font-body, .font-display, .font-script, .font-serif, .font-mono, [dir="rtl"], [dir="rtl"] *, [dir="ltr"], [dir="ltr"] * {
-  font-family: 'Symphonie Calligraphy', cursive, serif !important;
-}
-
