@@ -22350,7 +22350,7 @@ function _8({
                         }
                     })
                 }), p.jsxs("div", {
-                    className: "relative z-10 px-8 md:px-12 pt-10 md:pt-14 flex flex-col items-center",
+                    className: "relative z-10 px-8 md:px-12 pt-8 md:pt-10 flex flex-col items-center",
                     children: [o === "ar" || o === "es" ? p.jsx(z.img, {
                         initial: {
                             opacity: 0,
@@ -22378,9 +22378,24 @@ function _8({
                         },
                         transition: {
                             duration: 1,
+                            delay: .5
+                        },
+                        className: "font-display italic font-medium text-base md:text-lg text-[hsl(var(--ivory))] drop-shadow-[0_2px_16px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mb-3",
+                        children: "Together is a beautiful place to be"
+                    }), o === "ar" || o === "es" ? null : p.jsx(z.p, {
+                        initial: {
+                            opacity: 0,
+                            y: 10
+                        },
+                        animate: {
+                            opacity: i ? 0 : 1,
+                            y: i ? 10 : 0
+                        },
+                        transition: {
+                            duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.75rem] md:text-sm font-bold tracking-[0.42em] uppercase text-[hsl(var(--gold))] drop-shadow-[0_2px_16px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mb-5",
+                        className: "font-serif text-[0.75rem] md:text-sm font-bold tracking-[0.42em] uppercase text-[hsl(var(--gold))] drop-shadow-[0_2px_16px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mb-3",
                         children: "The Wedding of"
                     }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
