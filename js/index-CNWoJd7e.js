@@ -22233,7 +22233,7 @@ const d8 = 1,
         content_type: y8,
         created_at: w8
     },
-    rw = "assets/l5e-images/hero-poster-DsqR-n3x.jpg?v=hero20260727";
+    rw = "assets/l5e-images/amira_png.jpg?v=hero20260729";
 
 function x8(e, t) {
     const [n, r, s] = e.split("-").map(Number), i = new Date(Date.UTC(n, r - 1, s));
@@ -22289,31 +22289,7 @@ function _8({
             "aria-hidden": "true",
             loading: "eager",
             fetchPriority: "high",
-            className: `absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${l?"opacity-0":"opacity-100 animate-slow-zoom"}`
-        }), u && p.jsx("video", {
-            ref: a,
-            autoPlay: !0,
-            muted: !0,
-            loop: !0,
-            playsInline: !0,
-            preload: i ? "metadata" : "auto",
-            controls: !1,
-            disablePictureInPicture: !0,
-            poster: rw,
-            "aria-hidden": "true",
-            tabIndex: -1,
-            onLoadedData: h,
-            onCanPlay: h,
-            onPlaying: () => c(!0),
-            onPlay: () => c(!0),
-            onPause: () => {
-                i || h()
-            },
-            className: `hero-video absolute inset-0 h-full w-full object-cover pointer-events-none transition-opacity duration-700 ${l?"opacity-100":"opacity-0"}`,
-            children: p.jsx("source", {
-                src: b8.url,
-                type: "video/mp4"
-            })
+            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         }), p.jsx("div", {
             className: "absolute inset-0 pointer-events-none z-[2]",
             style: {
@@ -33649,7 +33625,7 @@ const OB = 1,
     zB = 1,
     WB = "368a6e1c-2ee3-44d6-917b-6e8d2aac0410",
     HB = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
-    KB = "assets/l5e-images/envelope-frame.jpg?v=new20260727",
+    KB = "assets/l5e-images/amira_png.jpg?v=amira20260730",
     qB = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/368a6e1c-2ee3-44d6-917b-6e8d2aac0410/envelope-frame.jpg",
     GB = "envelope-frame.jpg",
     QB = 943760,

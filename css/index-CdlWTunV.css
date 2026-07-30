@@ -10,15 +10,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Kaman';
+  src: url('../assets/fonts/kaman-Regular.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 *,
 .font-display, .font-display *, .font-script, .font-script *, .font-signature, .font-signature *,
-[dir="rtl"] h1, [dir="rtl"] h1 *, [dir="rtl"] h2, [dir="rtl"] h2 *, [dir="rtl"] h3, [dir="rtl"] h3 *,
-[dir="rtl"] h4, [dir="rtl"] h4 *, [dir="rtl"] h5, [dir="rtl"] h5 *, [dir="rtl"] h6, [dir="rtl"] h6 *,
-[dir="rtl"] .font-display, [dir="rtl"] .font-display *, [dir="rtl"] .font-script, [dir="rtl"] .font-script *,
-[dir="rtl"] .font-signature, [dir="rtl"] .font-signature *,
 [dir="ltr"] h1, [dir="ltr"] h1 *, [dir="ltr"] h2, [dir="ltr"] h2 *, [dir="ltr"] h3, [dir="ltr"] h3 *,
 [dir="ltr"] h4, [dir="ltr"] h4 *, [dir="ltr"] h5, [dir="ltr"] h5 *, [dir="ltr"] h6, [dir="ltr"] h6 *,
 [dir="ltr"] .font-display, [dir="ltr"] .font-display *, [dir="ltr"] .font-script, [dir="ltr"] .font-script *,
 [dir="ltr"] .font-signature, [dir="ltr"] .font-signature * {
   font-family: 'Symphonie Calligraphy', 'Snell Roundhand', 'Snell Roundhand Script', 'SnellRoundhand-Regular', cursive, serif !important;
+}
+
+[dir="rtl"] h1, [dir="rtl"] h1 *, [dir="rtl"] h2, [dir="rtl"] h2 *, [dir="rtl"] h3, [dir="rtl"] h3 *,
+[dir="rtl"] h4, [dir="rtl"] h4 *, [dir="rtl"] h5, [dir="rtl"] h5 *, [dir="rtl"] h6, [dir="rtl"] h6 *,
+[dir="rtl"] .font-display, [dir="rtl"] .font-display *, [dir="rtl"] .font-script, [dir="rtl"] .font-script *,
+[dir="rtl"] .font-signature, [dir="rtl"] .font-signature * {
+  font-family: 'Kaman', 'Amiri', 'Cairo', cursive, serif !important;
 }
