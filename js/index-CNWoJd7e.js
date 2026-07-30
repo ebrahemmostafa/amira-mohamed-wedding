@@ -22289,11 +22289,13 @@ function _8({
             "aria-hidden": "true",
             loading: "eager",
             fetchPriority: "high",
-            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom"
+            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom brightness-[0.22]"
+        }), p.jsx("div", {
+            className: "absolute inset-0 bg-black/75 pointer-events-none z-[1]"
         }), p.jsx("div", {
             className: "absolute inset-0 pointer-events-none z-[2]",
             style: {
-                background: "radial-gradient(ellipse at center 35%, hsl(var(--candlelight) / 0.25), transparent 60%)"
+                background: "radial-gradient(ellipse at center 35%, hsl(var(--candlelight) / 0.03), transparent 70%)"
             }
         }), p.jsx(a8, {
             count: 20
@@ -22344,7 +22346,7 @@ function _8({
                     children: p.jsx("div", {
                         className: "absolute inset-0",
                         style: {
-                            background: "radial-gradient(ellipse at 50% 55%, hsl(var(--ivory) / 0.78) 0%, hsl(var(--ivory) / 0.55) 40%, hsl(var(--ivory) / 0.15) 72%, transparent 100%)"
+                            background: "radial-gradient(ellipse at 50% 55%, rgba(10, 5, 12, 0.94) 0%, rgba(10, 5, 12, 0.86) 45%, rgba(10, 5, 12, 0.72) 75%, rgba(10, 5, 12, 0.45) 100%)"
                         }
                     })
                 }), p.jsxs("div", {
@@ -22378,7 +22380,7 @@ function _8({
                             duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-[hsl(var(--gold))] mb-5",
+                        className: "font-serif text-[0.75rem] md:text-sm font-semibold tracking-[0.42em] uppercase text-[hsl(var(--gold))] drop-shadow-[0_2px_12px_rgba(0,0,0,1)] mb-5",
                         children: "The Wedding of"
                     }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
@@ -22393,12 +22395,12 @@ function _8({
                             duration: 1.1,
                             delay: .9
                         },
-                        className: "font-display italic font-light text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]",
+                        className: "font-display italic font-normal text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--ivory))] drop-shadow-[0_4px_28px_rgba(0,0,0,1)]",
                         children: [p.jsx("span", {
                             className: "block",
                             children: e
                         }), p.jsx("span", {
-                            className: "block not-italic font-serif text-[0.42em] my-1 text-[hsl(var(--plum))]",
+                            className: "block not-italic font-serif text-[0.42em] font-semibold my-1 text-[hsl(var(--gold))] drop-shadow-[0_2px_12px_rgba(0,0,0,1)]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
@@ -22434,7 +22436,7 @@ function _8({
                             duration: 1,
                             delay: 1.25
                         },
-                        className: "font-serif text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--dusty-rose))]",
+                        className: "font-serif font-medium text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--ivory))] drop-shadow-[0_2px_14px_rgba(0,0,0,1)]",
                         children: x8(n, o)
                     }), o === "ar" || o === "es" ? null : s && p.jsx(z.p, {
                         initial: {
@@ -22449,7 +22451,7 @@ function _8({
                             duration: 1,
                             delay: 1.4
                         },
-                        className: "font-display italic text-base md:text-lg text-[hsl(var(--plum))]/75 mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
+                        className: "font-display italic font-medium text-base md:text-lg text-[hsl(var(--ivory))] drop-shadow-[0_2px_14px_rgba(0,0,0,1)] mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
                         children: s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,
