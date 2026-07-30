@@ -22289,14 +22289,11 @@ function _8({
             "aria-hidden": "true",
             loading: "eager",
             fetchPriority: "high",
-            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom brightness-[0.25]",
-            style: {
-                filter: "brightness(0.25)"
-            }
+            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         }), p.jsx("div", {
             className: "absolute inset-0 pointer-events-none z-[2]",
             style: {
-                background: "radial-gradient(ellipse at center 40%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.85) 100%)"
+                background: "radial-gradient(ellipse at center 35%, hsl(var(--candlelight) / 0.25), transparent 60%)"
             }
         }), p.jsx(a8, {
             count: 20
@@ -22347,7 +22344,7 @@ function _8({
                     children: p.jsx("div", {
                         className: "absolute inset-0",
                         style: {
-                            background: "radial-gradient(ellipse at 50% 55%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%)"
+                            background: "radial-gradient(ellipse at 50% 55%, hsl(var(--ivory) / 0.78) 0%, hsl(var(--ivory) / 0.55) 40%, hsl(var(--ivory) / 0.15) 72%, transparent 100%)"
                         }
                     })
                 }), p.jsxs("div", {
@@ -22367,7 +22364,7 @@ function _8({
                         },
                         src: "assets/l5e-images/into_amira.svg?v=1",
                         alt: "حفل زفاف أميرة و محمد",
-                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_24px_rgba(255,255,255,0.85)] drop-shadow-[0_0_12px_rgba(255,255,255,0.55)]"
+                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]"
                     }) : null, o === "ar" || o === "es" ? null : p.jsx(z.p, {
                         initial: {
                             opacity: 0,
@@ -22381,7 +22378,7 @@ function _8({
                             duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.75rem] md:text-sm font-medium tracking-[0.42em] uppercase text-[#f3d99e] mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                        className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-[hsl(var(--gold))] mb-5",
                         children: "The Wedding of"
                     }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
@@ -22396,12 +22393,12 @@ function _8({
                             duration: 1.1,
                             delay: .9
                         },
-                        className: "font-display italic font-normal text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[#fff5f8] drop-shadow-[0_2px_18px_rgba(0,0,0,0.95)]",
+                        className: "font-display italic font-light text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]",
                         children: [p.jsx("span", {
                             className: "block",
                             children: e
                         }), p.jsx("span", {
-                            className: "block not-italic font-serif text-[0.42em] my-1 text-[#f3d99e] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                            className: "block not-italic font-serif text-[0.42em] my-1 text-[hsl(var(--plum))]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
@@ -22437,7 +22434,7 @@ function _8({
                             duration: 1,
                             delay: 1.25
                         },
-                        className: "font-serif text-sm md:text-base font-medium tracking-[0.35em] uppercase text-[#fce4ec] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                        className: "font-serif text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--dusty-rose))]",
                         children: x8(n, o)
                     }), o === "ar" || o === "es" ? null : s && p.jsx(z.p, {
                         initial: {
@@ -22452,7 +22449,7 @@ function _8({
                             duration: 1,
                             delay: 1.4
                         },
-                        className: "font-display italic text-base md:text-lg text-[#fff0f5] mt-4 max-w-[22ch] leading-snug whitespace-pre-line drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                        className: "font-display italic text-base md:text-lg text-[hsl(var(--plum))]/75 mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
                         children: s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,

@@ -22289,14 +22289,11 @@ function _8({
             "aria-hidden": "true",
             loading: "eager",
             fetchPriority: "high",
-            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom brightness-[0.25]",
-            style: {
-                filter: "brightness(0.25)"
-            }
+            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         }), p.jsx("div", {
             className: "absolute inset-0 pointer-events-none z-[2]",
             style: {
-                background: "radial-gradient(ellipse at center 40%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.85) 100%)"
+                background: "radial-gradient(ellipse at center 35%, hsl(var(--candlelight) / 0.25), transparent 60%)"
             }
         }), p.jsx(a8, {
             count: 20
@@ -22347,28 +22344,12 @@ function _8({
                     children: p.jsx("div", {
                         className: "absolute inset-0",
                         style: {
-                            background: "radial-gradient(ellipse at 50% 55%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%)"
+                            background: "radial-gradient(ellipse at 50% 55%, hsl(var(--ivory) / 0.78) 0%, hsl(var(--ivory) / 0.55) 40%, hsl(var(--ivory) / 0.15) 72%, transparent 100%)"
                         }
                     })
                 }), p.jsxs("div", {
                     className: "relative z-10 px-8 md:px-12 pt-10 md:pt-14 flex flex-col items-center",
-                    children: [o === "ar" || o === "es" ? p.jsx(z.img, {
-                        initial: {
-                            opacity: 0,
-                            y: 15
-                        },
-                        animate: {
-                            opacity: i ? 0 : 1,
-                            y: i ? 15 : 0
-                        },
-                        transition: {
-                            duration: 1.1,
-                            delay: .8
-                        },
-                        src: "assets/l5e-images/into_amira.svg?v=1",
-                        alt: "حفل زفاف أميرة و محمد",
-                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_24px_rgba(255,255,255,0.85)] drop-shadow-[0_0_12px_rgba(255,255,255,0.55)]"
-                    }) : null, o === "ar" || o === "es" ? null : p.jsx(z.p, {
+                    children: [p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22381,9 +22362,9 @@ function _8({
                             duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.75rem] md:text-sm font-medium tracking-[0.42em] uppercase text-[#f3d99e] mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
-                        children: "The Wedding of"
-                    }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
+                        className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-[hsl(var(--gold))] mb-5",
+                        children: o === "ar" || o === "es" ? "حفل زفاف" : "The Wedding of"
+                    }), p.jsxs(z.h1, {
                         initial: {
                             opacity: 0,
                             y: 20
@@ -22396,21 +22377,21 @@ function _8({
                             duration: 1.1,
                             delay: .9
                         },
-                        className: "font-display italic font-normal text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[#fff5f8] drop-shadow-[0_2px_18px_rgba(0,0,0,0.95)]",
+                        className: "font-display italic font-light text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]",
                         children: [p.jsx("span", {
                             className: "block",
-                            children: e
+                            children: o === "ar" || o === "es" ? "محمد" : e
                         }), p.jsx("span", {
-                            className: "block not-italic font-serif text-[0.42em] my-1 text-[#f3d99e] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                            className: "block not-italic font-serif text-[0.42em] my-1 text-[hsl(var(--plum))]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
-                            children: "&"
+                            children: o === "ar" || o === "es" ? "و" : "&"
                         }), p.jsx("span", {
                             className: "block",
-                            children: t
+                            children: o === "ar" || o === "es" ? "أميرة" : t
                         })]
-                    }), o === "ar" || o === "es" ? null : p.jsx(z.div, {
+                    }), p.jsx(z.div, {
                         initial: {
                             opacity: 0,
                             scaleX: 0
@@ -22424,7 +22405,7 @@ function _8({
                             delay: 1.15
                         },
                         className: "gold-rule w-16 my-6 origin-center"
-                    }), o === "ar" || o === "es" ? null : p.jsx(z.p, {
+                    }), p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22437,9 +22418,9 @@ function _8({
                             duration: 1,
                             delay: 1.25
                         },
-                        className: "font-serif text-sm md:text-base font-medium tracking-[0.35em] uppercase text-[#fce4ec] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
+                        className: "font-serif text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--dusty-rose))]",
                         children: x8(n, o)
-                    }), o === "ar" || o === "es" ? null : s && p.jsx(z.p, {
+                    }), s && p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22452,8 +22433,8 @@ function _8({
                             duration: 1,
                             delay: 1.4
                         },
-                        className: "font-display italic text-base md:text-lg text-[#fff0f5] mt-4 max-w-[22ch] leading-snug whitespace-pre-line drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
-                        children: s
+                        className: "font-display italic text-base md:text-lg text-[hsl(var(--plum))]/75 mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
+                        children: o === "ar" || o === "es" ? "قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر" : s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,
                         initial: {
@@ -22994,10 +22975,8 @@ const dL = "ed62a578-1b0c-4fe9-bd98-5c72e42ea515",
 
 function xL() {
     const {
-        t: e,
-        lang: o
+        t: e
     } = ht();
-    const isAr = o === "ar" || o === "es";
     return p.jsx("section", {
         className: "section-padding bg-ivory relative overflow-hidden",
         children: p.jsx("div", {
@@ -23025,38 +23004,18 @@ function xL() {
                     loading: "lazy"
                 }), p.jsx("h2", {
                     className: "font-display text-3xl md:text-4xl text-[hsl(var(--plum))] mb-3",
-                    children: isAr ? "برنامج اليوم" : "Timeline of the Day"
+                    children: e("dress.title")
                 }), p.jsx("div", {
-                    className: "gold-rule mx-auto mb-8"
+                    className: "gold-rule mx-auto"
                 }), p.jsx("p", {
-                    className: "text-[hsl(var(--plum))]/90 font-display italic text-xl md:text-2xl leading-relaxed max-w-xl mb-10",
-                    children: isAr ? "يبدأ الحفل بعقد القران (كتب الكتاب) الساعة 7:00 مساءً، يليه حفل الزفاف." : "The celebration begins with (Katb El Ketab) at 7:00 PM, followed by the wedding reception."
-                }), p.jsxs("div", {
-                    className: "w-full max-w-md mx-auto flex flex-col items-center border border-[hsl(var(--gold))/30] rounded-2xl p-6 md:p-8 bg-[hsl(var(--ivory))/60] shadow-sm",
-                    children: [p.jsxs("div", {
-                        className: "flex flex-col items-center",
-                        children: [p.jsx("span", {
-                            className: "font-serif text-xs tracking-[0.25em] uppercase text-[hsl(var(--gold))] mb-1",
-                            children: isAr ? "7:00 مساءً" : "7:00 PM"
-                        }), p.jsx("h3", {
-                            className: "font-display text-xl md:text-2xl text-[hsl(var(--plum))]",
-                            children: isAr ? "عقد القران (كتب الكتاب)" : "Katb El Ketab"
-                        })]
-                    }), p.jsx("div", {
-                        className: "flex flex-col items-center my-3",
-                        children: p.jsx("div", {
-                            className: "w-px h-8 bg-[hsl(var(--gold))/40]"
-                        })
-                    }), p.jsxs("div", {
-                        className: "flex flex-col items-center",
-                        children: [p.jsx("span", {
-                            className: "font-serif text-xs tracking-[0.25em] uppercase text-[hsl(var(--gold))] mb-1",
-                            children: isAr ? "يليه مباشرة" : "FOLLOWING"
-                        }), p.jsx("h3", {
-                            className: "font-display text-xl md:text-2xl text-[hsl(var(--plum))]",
-                            children: isAr ? "حفل الزفاف" : "Wedding Reception"
-                        })]
-                    })]
+                    className: "mt-4 text-[hsl(var(--plum))]/90 font-body italic text-lg",
+                    children: e("dress.subtitle")
+                }), p.jsx("p", {
+                    className: "mt-6 text-[hsl(var(--plum))]/85 font-body leading-relaxed max-w-xl",
+                    children: e("dress.formal.desc")
+                }), p.jsx("p", {
+                    className: "mt-4 text-[hsl(var(--plum))]/75 font-body italic leading-relaxed max-w-xl",
+                    children: e("dress.note.desc")
                 })]
             })
         })
