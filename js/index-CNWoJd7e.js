@@ -22991,8 +22991,10 @@ const dL = "ed62a578-1b0c-4fe9-bd98-5c72e42ea515",
 
 function xL() {
     const {
-        t: e
+        t: e,
+        lang: o
     } = ht();
+    const isAr = o === "ar" || o === "es";
     return p.jsx("section", {
         className: "section-padding bg-ivory relative overflow-hidden",
         children: p.jsx("div", {
@@ -23020,18 +23022,38 @@ function xL() {
                     loading: "lazy"
                 }), p.jsx("h2", {
                     className: "font-display text-3xl md:text-4xl text-[hsl(var(--plum))] mb-3",
-                    children: e("dress.title")
+                    children: isAr ? "برنامج اليوم" : "Timeline of the Day"
                 }), p.jsx("div", {
-                    className: "gold-rule mx-auto"
+                    className: "gold-rule mx-auto mb-8"
                 }), p.jsx("p", {
-                    className: "mt-4 text-[hsl(var(--plum))]/90 font-body italic text-lg",
-                    children: e("dress.subtitle")
-                }), p.jsx("p", {
-                    className: "mt-6 text-[hsl(var(--plum))]/85 font-body leading-relaxed max-w-xl",
-                    children: e("dress.formal.desc")
-                }), p.jsx("p", {
-                    className: "mt-4 text-[hsl(var(--plum))]/75 font-body italic leading-relaxed max-w-xl",
-                    children: e("dress.note.desc")
+                    className: "text-[hsl(var(--plum))]/90 font-display italic text-xl md:text-2xl leading-relaxed max-w-xl mb-10",
+                    children: isAr ? "يبدأ الحفل بعقد القران (كتب الكتاب) الساعة 7:00 مساءً، يليه حفل الزفاف." : "The celebration begins with (Katb El Ketab) at 7:00 PM, followed by the wedding reception."
+                }), p.jsxs("div", {
+                    className: "w-full max-w-md mx-auto flex flex-col items-center border border-[hsl(var(--gold))/30] rounded-2xl p-6 md:p-8 bg-[hsl(var(--ivory))/60] shadow-sm",
+                    children: [p.jsxs("div", {
+                        className: "flex flex-col items-center",
+                        children: [p.jsx("span", {
+                            className: "font-serif text-xs tracking-[0.25em] uppercase text-[hsl(var(--gold))] mb-1",
+                            children: isAr ? "7:00 مساءً" : "7:00 PM"
+                        }), p.jsx("h3", {
+                            className: "font-display text-xl md:text-2xl text-[hsl(var(--plum))]",
+                            children: isAr ? "عقد القران (كتب الكتاب)" : "Katb El Ketab"
+                        })]
+                    }), p.jsx("div", {
+                        className: "flex flex-col items-center my-3",
+                        children: p.jsx("div", {
+                            className: "w-px h-8 bg-[hsl(var(--gold))/40]"
+                        })
+                    }), p.jsxs("div", {
+                        className: "flex flex-col items-center",
+                        children: [p.jsx("span", {
+                            className: "font-serif text-xs tracking-[0.25em] uppercase text-[hsl(var(--gold))] mb-1",
+                            children: isAr ? "يليه مباشرة" : "FOLLOWING"
+                        }), p.jsx("h3", {
+                            className: "font-display text-xl md:text-2xl text-[hsl(var(--plum))]",
+                            children: isAr ? "حفل الزفاف" : "Wedding Reception"
+                        })]
+                    })]
                 })]
             })
         })
