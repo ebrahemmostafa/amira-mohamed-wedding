@@ -22349,7 +22349,23 @@ function _8({
                     })
                 }), p.jsxs("div", {
                     className: "relative z-10 px-8 md:px-12 pt-10 md:pt-14 flex flex-col items-center",
-                    children: [p.jsx(z.p, {
+                    children: [o === "ar" || o === "es" ? p.jsx(z.img, {
+                        initial: {
+                            opacity: 0,
+                            y: 15
+                        },
+                        animate: {
+                            opacity: i ? 0 : 1,
+                            y: i ? 15 : 0
+                        },
+                        transition: {
+                            duration: 1.1,
+                            delay: .8
+                        },
+                        src: "assets/l5e-images/into_amira.svg?v=1",
+                        alt: "حفل زفاف أميرة و محمد",
+                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]"
+                    }) : null, o === "ar" || o === "es" ? null : p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22363,8 +22379,8 @@ function _8({
                             delay: .7
                         },
                         className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-[hsl(var(--gold))] mb-5",
-                        children: o === "ar" || o === "es" ? "حفل زفاف" : "The Wedding of"
-                    }), p.jsxs(z.h1, {
+                        children: "The Wedding of"
+                    }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
                             opacity: 0,
                             y: 20
@@ -22380,18 +22396,18 @@ function _8({
                         className: "font-display italic font-light text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]",
                         children: [p.jsx("span", {
                             className: "block",
-                            children: o === "ar" || o === "es" ? "محمد" : e
+                            children: e
                         }), p.jsx("span", {
                             className: "block not-italic font-serif text-[0.42em] my-1 text-[hsl(var(--plum))]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
-                            children: o === "ar" || o === "es" ? "و" : "&"
+                            children: "&"
                         }), p.jsx("span", {
                             className: "block",
-                            children: o === "ar" || o === "es" ? "أميرة" : t
+                            children: t
                         })]
-                    }), p.jsx(z.div, {
+                    }), o === "ar" || o === "es" ? null : p.jsx(z.div, {
                         initial: {
                             opacity: 0,
                             scaleX: 0
@@ -22405,7 +22421,7 @@ function _8({
                             delay: 1.15
                         },
                         className: "gold-rule w-16 my-6 origin-center"
-                    }), p.jsx(z.p, {
+                    }), o === "ar" || o === "es" ? null : p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22420,7 +22436,7 @@ function _8({
                         },
                         className: "font-serif text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--dusty-rose))]",
                         children: x8(n, o)
-                    }), s && p.jsx(z.p, {
+                    }), o === "ar" || o === "es" ? null : s && p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22434,7 +22450,7 @@ function _8({
                             delay: 1.4
                         },
                         className: "font-display italic text-base md:text-lg text-[hsl(var(--plum))]/75 mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
-                        children: o === "ar" || o === "es" ? "قاعة أوسيل، طلخا، المنصورة، محافظة الدقهلية، مصر" : s
+                        children: s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,
                         initial: {
