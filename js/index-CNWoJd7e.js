@@ -22376,9 +22376,24 @@ function _8({
                         },
                         transition: {
                             duration: 1,
+                            delay: .5
+                        },
+                        className: "font-display italic text-lg md:text-xl text-[hsl(var(--dusty-blue))] drop-shadow-[0_2px_18px_rgba(255,255,255,0.7)] font-medium mb-3 text-center tracking-wide",
+                        children: "Together is a beautiful place to be"
+                    }), o === "ar" || o === "es" ? null : p.jsx(z.p, {
+                        initial: {
+                            opacity: 0,
+                            y: 10
+                        },
+                        animate: {
+                            opacity: i ? 0 : 1,
+                            y: i ? 10 : 0
+                        },
+                        transition: {
+                            duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-black font-semibold mb-5",
+                        className: "font-serif text-[0.7rem] md:text-xs tracking-[0.42em] uppercase text-black font-semibold mb-4",
                         children: "The Wedding of"
                     }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
