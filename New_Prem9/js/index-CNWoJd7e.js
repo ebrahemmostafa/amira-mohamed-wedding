@@ -23026,7 +23026,7 @@ function xL() {
                 }), p.jsx("div", {
                     className: "gold-rule mx-auto mb-8"
                 }), p.jsx("p", {
-                    className: "text-[hsl(var(--plum))]/90 font-display italic text-xl md:text-2xl leading-relaxed max-w-xl mb-10",
+                    className: "font-body text-lg md:text-xl text-[hsl(var(--plum))]/90 leading-relaxed max-w-xl mb-10 whitespace-pre-wrap",
                     children: isAr ? "يبدأ الحفل بعقد القران (كتب الكتاب) الساعة 7:00 مساءً، يليه حفل الزفاف." : "The celebration begins with (Katb El Ketab) at 7:00 PM, followed by the wedding reception."
                 }), p.jsxs("div", {
                     className: "w-full max-w-md mx-auto flex flex-col items-center border border-[hsl(var(--gold))/30] rounded-2xl p-6 md:p-8 bg-[hsl(var(--ivory))/60] shadow-sm",
