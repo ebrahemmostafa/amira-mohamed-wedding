@@ -22289,13 +22289,14 @@ function _8({
             "aria-hidden": "true",
             loading: "eager",
             fetchPriority: "high",
-            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom brightness-[0.10]"
-        }), p.jsx("div", {
-            className: "absolute inset-0 bg-black/85 pointer-events-none z-[1]"
+            className: "absolute inset-0 h-full w-full object-cover animate-slow-zoom brightness-[0.25]",
+            style: {
+                filter: "brightness(0.25)"
+            }
         }), p.jsx("div", {
             className: "absolute inset-0 pointer-events-none z-[2]",
             style: {
-                background: "radial-gradient(ellipse at center 35%, hsl(var(--candlelight) / 0.03), transparent 70%)"
+                background: "radial-gradient(ellipse at center 40%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.85) 100%)"
             }
         }), p.jsx(a8, {
             count: 20
@@ -22346,11 +22347,11 @@ function _8({
                     children: p.jsx("div", {
                         className: "absolute inset-0",
                         style: {
-                            background: "radial-gradient(ellipse at 50% 55%, rgba(5, 2, 8, 0.98) 0%, rgba(5, 2, 8, 0.95) 45%, rgba(5, 2, 8, 0.92) 75%, rgba(5, 2, 8, 0.85) 100%)"
+                            background: "radial-gradient(ellipse at 50% 55%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%)"
                         }
                     })
                 }), p.jsxs("div", {
-                    className: "relative z-10 px-8 md:px-12 pt-8 md:pt-10 flex flex-col items-center",
+                    className: "relative z-10 px-8 md:px-12 pt-10 md:pt-14 flex flex-col items-center",
                     children: [o === "ar" || o === "es" ? p.jsx(z.img, {
                         initial: {
                             opacity: 0,
@@ -22366,23 +22367,8 @@ function _8({
                         },
                         src: "assets/l5e-images/into_amira.svg?v=1",
                         alt: "حفل زفاف أميرة و محمد",
-                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]"
+                        className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_24px_rgba(255,255,255,0.85)] drop-shadow-[0_0_12px_rgba(255,255,255,0.55)]"
                     }) : null, o === "ar" || o === "es" ? null : p.jsx(z.p, {
-                        initial: {
-                            opacity: 0,
-                            y: 10
-                        },
-                        animate: {
-                            opacity: i ? 0 : 1,
-                            y: i ? 10 : 0
-                        },
-                        transition: {
-                            duration: 1,
-                            delay: .5
-                        },
-                        className: "font-display italic font-medium text-base md:text-lg text-[hsl(var(--ivory))] drop-shadow-[0_2px_16px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mb-3",
-                        children: "Together is a beautiful place to be"
-                    }), o === "ar" || o === "es" ? null : p.jsx(z.p, {
                         initial: {
                             opacity: 0,
                             y: 10
@@ -22395,7 +22381,7 @@ function _8({
                             duration: 1,
                             delay: .7
                         },
-                        className: "font-serif text-[0.75rem] md:text-sm font-bold tracking-[0.42em] uppercase text-[hsl(var(--gold))] drop-shadow-[0_2px_16px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mb-3",
+                        className: "font-serif text-[0.75rem] md:text-sm font-medium tracking-[0.42em] uppercase text-[#f3d99e] mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
                         children: "The Wedding of"
                     }), o === "ar" || o === "es" ? null : p.jsxs(z.h1, {
                         initial: {
@@ -22410,12 +22396,12 @@ function _8({
                             duration: 1.1,
                             delay: .9
                         },
-                        className: "font-display italic font-medium text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[hsl(var(--ivory))] drop-shadow-[0_4px_28px_rgba(0,0,0,1)] [text-shadow:_0_2px_15px_rgb(0_0_0_/_100%)]",
+                        className: "font-display italic font-normal text-[clamp(3.2rem,10vw,6.5rem)] leading-[0.95] text-[#fff5f8] drop-shadow-[0_2px_18px_rgba(0,0,0,0.95)]",
                         children: [p.jsx("span", {
                             className: "block",
                             children: e
                         }), p.jsx("span", {
-                            className: "block not-italic font-serif text-[0.42em] font-semibold my-1 text-[hsl(var(--gold))] drop-shadow-[0_2px_12px_rgba(0,0,0,1)]",
+                            className: "block not-italic font-serif text-[0.42em] my-1 text-[#f3d99e] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
                             style: {
                                 fontFamily: "'Cormorant Garamond', serif"
                             },
@@ -22451,7 +22437,7 @@ function _8({
                             duration: 1,
                             delay: 1.25
                         },
-                        className: "font-serif font-semibold text-sm md:text-base tracking-[0.35em] uppercase text-[hsl(var(--ivory))] drop-shadow-[0_2px_14px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)]",
+                        className: "font-serif text-sm md:text-base font-medium tracking-[0.35em] uppercase text-[#fce4ec] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
                         children: x8(n, o)
                     }), o === "ar" || o === "es" ? null : s && p.jsx(z.p, {
                         initial: {
@@ -22463,10 +22449,10 @@ function _8({
                             y: i ? 10 : 0
                         },
                         transition: {
-                            duration: 1.4,
+                            duration: 1,
                             delay: 1.4
                         },
-                        className: "font-display italic font-semibold text-base md:text-lg text-[hsl(var(--ivory))] drop-shadow-[0_2px_14px_rgba(0,0,0,1)] [text-shadow:_0_2px_10px_rgb(0_0_0_/_100%)] mt-4 max-w-[22ch] leading-snug whitespace-pre-line",
+                        className: "font-display italic text-base md:text-lg text-[#fff0f5] mt-4 max-w-[22ch] leading-snug whitespace-pre-line drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]",
                         children: s
                     }), p.jsx(z.svg, {
                         "aria-hidden": !0,
