@@ -33163,7 +33163,16 @@ function IV({
                 className: "text-sm text-[hsl(var(--plum))]/90 font-body tracking-[0.3em] uppercase",
                 children: i
             }), p.jsx("div", {
-                className: "gold-rule w-24 mx-auto mt-6"
+                className: "gold-rule w-24 mx-auto mt-6 mb-4"
+            }), p.jsxs("p", {
+                className: "text-xs text-[hsl(var(--plum))]/75 font-body tracking-wider mt-2",
+                children: [r("footer.madeBy"), " ", p.jsx("a", {
+                    href: "https://ajwa2-collection.vercel.app/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "underline hover:opacity-80 font-medium",
+                    children: "Ajwaa"
+                })]
             })]
         })]
     })
