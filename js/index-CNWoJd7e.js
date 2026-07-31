@@ -22528,7 +22528,7 @@ const S8 = "2b66b518-489b-4982-af38-67ec60286a6d",
     N8 = 1,
     O8 = "017d1b9c-0383-4586-93ce-2feee007ed4d",
     I8 = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
-    $8 = "assets/l5e-images/welcome-chateau.png?v=chateau20260727",
+    $8 = "assets/l5e-images/pic_amira.jpg?v=pic_amira_20260731",
     D8 = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/017d1b9c-0383-4586-93ce-2feee007ed4d/welcome-chateau.png",
     M8 = "welcome-chateau.png",
     L8 = 326899,
@@ -22578,7 +22578,7 @@ function B8({
                 transition: {
                     duration: 1
                 },
-                className: "w-64 md:w-80 max-h-[440px] object-contain mx-auto mb-4 drop-shadow-[0_2px_18px_rgba(214,198,166,0.55)]"
+                className: "w-64 md:w-80 max-h-[440px] object-contain rounded-2xl mx-auto mb-4 drop-shadow-[0_4px_24px_rgba(214,198,166,0.65)]"
             })
         }), p.jsxs("div", {
             className: "relative max-w-2xl mx-auto px-4 md:px-6",
