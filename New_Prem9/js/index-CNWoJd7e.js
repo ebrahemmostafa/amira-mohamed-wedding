@@ -22362,7 +22362,7 @@ function _8({
                             duration: 1.1,
                             delay: .8
                         },
-                        src: "assets/l5e-images/into_amira.svg?v=1",
+                        src: "assets/l5e-images/into_amira.svg?v=2",
                         alt: "حفل زفاف أميرة و محمد",
                         className: "w-[95%] max-w-[460px] h-auto mt-[60%] mb-2 mx-auto object-contain drop-shadow-[0_2px_18px_rgba(255,255,255,0.55)]"
                     }) : null, o === "ar" || o === "es" ? null : p.jsx(z.p, {
