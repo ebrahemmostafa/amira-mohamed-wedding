@@ -32905,7 +32905,7 @@ function _V() {
                 };
                 try {
                     const dbUrl = localStorage.getItem('custom_rsvp_db') || "https://jsonblob.com/api/jsonBlob/019fbcea-2021-7333-9dce-a4077ddee73d";
-                    const resp = await fetch(dbUrl);
+                    const resp = await fetch(dbUrl + "?t=" + Date.now(), { cache: "no-store" });
                     let list = [];
                     if (resp.ok) { list = await resp.json(); if (!Array.isArray(list)) list = []; }
                     list.push(newRsvp);
