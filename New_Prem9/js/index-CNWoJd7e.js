@@ -22175,8 +22175,8 @@ VILLAGES & LANDMARKS`,
     },
     nw = {
         en: l8,
-        es: c8,
-        ar: c8
+        es: l8,
+        ar: l8
     },
     $E = g.createContext(null);
 
@@ -22184,12 +22184,10 @@ function u8({
     children: e
 }) {
     const [t, n] = g.useState(() => {
-        if (typeof window > "u") return "en";
-        const s = window.localStorage.getItem("lang");
-        return s === "ar" || s === "es" || s === "en" ? (s === "es" ? "ar" : s) : "en"
+        return "en"
     });
     g.useEffect(() => {
-        const isAr = t === "ar" || t === "es"; document.documentElement.lang = isAr ? "ar" : "en", document.documentElement.dir = isAr ? "rtl" : "ltr", window.localStorage.setItem("lang", isAr ? "ar" : t)
+        document.documentElement.lang = "en", document.documentElement.dir = "ltr", window.localStorage.setItem("lang", "en")
     }, [t]);
     const r = (s, i) => {
         let o = nw[t][s] ?? nw.en[s] ?? s;
