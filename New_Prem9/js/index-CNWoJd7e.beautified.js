@@ -22720,7 +22720,7 @@ const z8 = "4bc58cfa-4988-4f35-9b58-1b885a62888e",
     q8 = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
     G8 = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/4bc58cfa-4988-4f35-9b58-1b885a62888e/countdown-drape-left.png",
     Q8 = 409899,
-    Y8 = "assets/l5e-images/countdown-drape-left.png?v=drape20260727",
+    Y8 = "assets/l5e-images/countdown-drape-left.png?v=drape20260801_left",
     J8 = 1,
     X8 = {
         asset_id: z8,
