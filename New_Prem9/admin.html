@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أميرا & محمد — لوحة تحكم ردود المدعوين (RSVP Dashboard)</title>
+    <title>Amira & Mohamed — RSVP Guest Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --plum: #2A1822;
@@ -29,7 +29,7 @@
         }
 
         body {
-            font-family: 'Cairo', 'Montserrat', sans-serif;
+            font-family: 'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
             background: linear-gradient(135deg, var(--ivory) 0%, var(--ivory-dark) 100%);
             color: var(--plum);
             min-height: 100vh;
@@ -58,6 +58,7 @@
         }
 
         .container {
+            width: 100%;
             max-width: 1250px;
             margin: 0 auto;
             padding: 0 1.5rem;
@@ -70,114 +71,117 @@
             flex-wrap: wrap;
             gap: 1.5rem;
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
 
         .title-area h1 {
-            font-family: 'Amiri', serif;
-            font-size: 2.2rem;
-            color: var(--gold-light);
-            margin-bottom: 0.3rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.65rem;
+            color: var(--ivory);
         }
 
         .title-area p {
             font-size: 0.95rem;
-            opacity: 0.9;
-            color: #E2D9DD;
+            color: #D6CBD0;
+            margin-top: 0.35rem;
         }
 
         .header-actions {
             display: flex;
+            align-items: center;
             gap: 0.75rem;
             flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .badge-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(16, 185, 129, 0.2);
-            color: #6EE7B7;
-            border: 1px solid rgba(16, 185, 129, 0.4);
-            padding: 0.45rem 1rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            backdrop-filter: blur(5px);
-        }
-
-        .badge-status.error {
-            background: rgba(239, 68, 68, 0.2);
-            color: #FCA5A5;
-            border-color: rgba(239, 68, 68, 0.4);
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.45rem;
             padding: 0.65rem 1.25rem;
             border-radius: 0.65rem;
             font-family: inherit;
             font-size: 0.9rem;
-            font-weight: 700;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.25s ease;
-            border: none;
             text-decoration: none;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
         .btn-gold {
             background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-            color: var(--plum);
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            color: #fff;
+            border-color: var(--gold);
         }
 
         .btn-gold:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
         }
 
         .btn-outline {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             color: var(--ivory);
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(5px);
         }
 
         .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--gold);
         }
 
         .btn-danger {
-            background: rgba(239, 68, 68, 0.15);
-            color: #FCA5A5;
-            border: 1px solid rgba(239, 68, 68, 0.35);
+            background: rgba(239, 68, 68, 0.12);
+            color: #DC2626;
+            border: 1px solid rgba(239, 68, 68, 0.3);
         }
 
         .btn-danger:hover {
-            background: var(--danger);
+            background: #DC2626;
             color: #fff;
         }
 
+        .badge-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(16, 185, 129, 0.15);
+            color: #059669;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .badge-status.error {
+            background: rgba(239, 68, 68, 0.15);
+            color: #DC2626;
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        /* KPI Cards Grid */
         .kpi-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1.5rem;
-            margin: -2rem auto 2.5rem;
+            margin: -2.5rem auto 2rem auto;
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         .kpi-card {
             background: var(--card-bg);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(212, 175, 55, 0.25);
-            border-radius: 1rem;
+            border-radius: 1.15rem;
             padding: 1.5rem;
             box-shadow: var(--shadow);
             display: flex;
@@ -188,42 +192,44 @@
 
         .kpi-card:hover {
             transform: translateY(-4px);
-            border-color: var(--gold);
         }
 
         .kpi-info h3 {
-            font-size: 0.9rem;
-            color: #66525E;
+            font-size: 0.85rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            color: #66525E;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.35rem;
         }
 
         .kpi-info .val {
-            font-size: 2.25rem;
-            font-weight: 800;
+            font-size: 2rem;
+            font-weight: 700;
             color: var(--plum);
-            line-height: 1;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .kpi-icon {
-            width: 56px;
-            height: 56px;
+            width: 52px;
+            height: 52px;
             border-radius: 1rem;
+            background: rgba(212, 175, 55, 0.12);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.6rem;
-            background: rgba(212, 175, 55, 0.15);
         }
 
+        /* Controls / Filter Bar */
         .controls-bar {
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 1rem;
-            padding: 1.25rem 1.5rem;
+            border-radius: 1.15rem;
+            padding: 1.25rem;
             box-shadow: var(--shadow);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -233,14 +239,14 @@
 
         .search-box {
             flex: 1;
-            min-width: 250px;
+            min-width: 280px;
             position: relative;
         }
 
         .search-box input {
             width: 100%;
-            padding: 0.75rem 2.75rem 0.75rem 1rem;
-            border-radius: 0.65rem;
+            padding: 0.75rem 1rem 0.75rem 2.6rem;
+            border-radius: 0.75rem;
             border: 1px solid #D6CBD0;
             font-family: inherit;
             font-size: 0.95rem;
@@ -257,7 +263,7 @@
 
         .search-box .icon-search {
             position: absolute;
-            right: 0.95rem;
+            left: 0.95rem;
             top: 50%;
             transform: translateY(-50%);
             color: #8C7A84;
@@ -306,7 +312,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            text-align: right;
+            text-align: left;
         }
 
         thead {
@@ -317,7 +323,9 @@
         th {
             padding: 1.15rem 1.25rem;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             color: var(--plum);
             white-space: nowrap;
         }
@@ -326,36 +334,65 @@
             padding: 1.15rem 1.25rem;
             border-bottom: 1px solid #EEE9E5;
             font-size: 0.95rem;
-            color: #33242B;
+            color: var(--plum);
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr {
+            transition: background 0.2s ease;
         }
 
         tbody tr:hover {
-            background: #FAFAF7;
+            background: #FAF8F5;
         }
 
         .status-pill {
             display: inline-flex;
             align-items: center;
-            gap: 0.4rem;
-            padding: 0.35rem 0.85rem;
-            border-radius: 999px;
-            font-size: 0.8rem;
-            font-weight: 700;
+            gap: 0.35rem;
+            padding: 0.35rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
         }
 
         .status-pill.yes {
-            background: rgba(16, 185, 129, 0.15);
-            color: #047857;
+            background: rgba(16, 185, 129, 0.12);
+            color: #059669;
         }
 
         .status-pill.no {
-            background: rgba(239, 68, 68, 0.15);
-            color: #B91C1C;
+            background: rgba(239, 68, 68, 0.12);
+            color: #DC2626;
         }
 
+        .btn-delete {
+            background: none;
+            border: 1px solid #D6CBD0;
+            color: #DC2626;
+            border-radius: 0.5rem;
+            padding: 0.35rem 0.65rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-delete:hover {
+            background: #DC2626;
+            color: #fff;
+            border-color: #DC2626;
+        }
+
+        /* Empty state */
         .empty-state {
             text-align: center;
-            padding: 5rem 2rem;
+            padding: 5rem 1.5rem;
             color: #8C7A84;
         }
 
@@ -366,37 +403,30 @@
         }
 
         .empty-state h3 {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--plum);
             margin-bottom: 0.5rem;
         }
 
-        .btn-delete {
-            background: rgba(239, 68, 68, 0.1);
-            color: #EF4444;
-            border: none;
-            padding: 0.45rem 0.75rem;
-            border-radius: 0.5rem;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
+        .empty-state p {
+            max-width: 420px;
+            margin: 0 auto;
+            font-size: 0.95rem;
         }
 
-        .btn-delete:hover {
-            background: #EF4444;
-            color: #fff;
-        }
-
-        /* Modal Styles */
+        /* Modal styling */
         .modal-overlay {
             position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(42, 24, 34, 0.6);
             backdrop-filter: blur(4px);
+            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 1000;
             opacity: 0;
             pointer-events: none;
             transition: all 0.25s ease;
@@ -445,7 +475,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.4rem;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 0.9rem;
             color: var(--plum);
         }
@@ -511,22 +541,22 @@
             <div class="title-area">
                 <h1>
                     <span>💍</span>
-                    <span>أميرا & محمد — سجل المدعوين (RSVP)</span>
+                    <span>Amira & Mohamed — RSVP Dashboard</span>
                 </h1>
-                <p>إدارة ومتابعة ردود المدعوين وحضور حفل الزفاف بشكل مباشر ومركزي</p>
+                <p>Real-time guest attendance tracking and RSVP responses</p>
             </div>
             <div class="header-actions">
                 <span id="status-badge" class="badge-status">
                     <span>🟢</span>
-                    <span id="status-text">متصل بقاعدة البيانات السحابية</span>
+                    <span id="status-text">Connected to Global Cloud DB</span>
                 </span>
-                <button onclick="toggleSettings()" class="btn btn-outline" title="إعدادات قاعدة البيانات">
+                <button onclick="toggleSettings()" class="btn btn-outline" title="Database Settings">
                     <span>⚙️</span>
-                    <span>إعدادات الداتابيز</span>
+                    <span>Database Settings</span>
                 </button>
                 <a href="index.html" class="btn btn-outline">
                     <span>🏠</span>
-                    <span>الموقع الرئيسي</span>
+                    <span>Main Website</span>
                 </a>
             </div>
         </div>
@@ -537,28 +567,28 @@
         <div class="kpi-grid">
             <div class="kpi-card">
                 <div class="kpi-info">
-                    <h3>إجمالي الردود</h3>
+                    <h3>Total Responses</h3>
                     <div class="val" id="kpi-total">0</div>
                 </div>
                 <div class="kpi-icon">📋</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-info">
-                    <h3>حاضرون (تأكيد الحضور)</h3>
+                    <h3>Attending (Confirmed)</h3>
                     <div class="val" id="kpi-yes" style="color: #059669;">0</div>
                 </div>
                 <div class="kpi-icon" style="background: rgba(16, 185, 129, 0.15);">✅</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-info">
-                    <h3>معتذرون (اعتذار عن الحضور)</h3>
+                    <h3>Not Attending (Declined)</h3>
                     <div class="val" id="kpi-no" style="color: #DC2626;">0</div>
                 </div>
                 <div class="kpi-icon" style="background: rgba(239, 68, 68, 0.15);">❌</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-info">
-                    <h3>رسائل وتهاني العروسين</h3>
+                    <h3>Messages & Wishes</h3>
                     <div class="val" id="kpi-messages" style="color: #A68523;">0</div>
                 </div>
                 <div class="kpi-icon">💌</div>
@@ -567,12 +597,12 @@
 
         <!-- Settings Panel -->
         <div id="settings-panel" class="settings-panel">
-            <h4>⚙️ إعدادات قاعدة البيانات السحابية (Cloud JSON Database)</h4>
-            <p>يتم حفظ جميع الردود تلقائياً في قاعدة بيانات سحابية دائمة ومخصصة لحفل زفاف أميرا ومحمد، بالإضافة إلى نسخة احتياطية في متصفحك.</p>
+            <h4>⚙️ Global Cloud Database Settings (JSONBlob)</h4>
+            <p>All RSVP responses are stored automatically in a permanent cloud database for Amira & Mohamed's wedding, alongside a local backup in your browser.</p>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <input type="text" id="db-url-input" placeholder="رابط قاعدة البيانات (Endpoint URL)" style="flex: 1; min-width: 280px; padding: 0.65rem 1rem; border-radius: 0.5rem; border: 1px solid #D6CBD0;">
-                <button onclick="saveCustomDb()" class="btn btn-gold">حفظ الإعدادات</button>
-                <button onclick="resetCustomDb()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;">استعادة القاعدة الافتراضية</button>
+                <input type="text" id="db-url-input" placeholder="Cloud Database URL (Endpoint)" style="flex: 1; min-width: 280px; padding: 0.65rem 1rem; border-radius: 0.5rem; border: 1px solid #D6CBD0;">
+                <button onclick="saveCustomDb()" class="btn btn-gold">Save Settings</button>
+                <button onclick="resetCustomDb()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;">Restore Default DB</button>
             </div>
         </div>
 
@@ -580,31 +610,31 @@
         <div class="controls-bar">
             <div class="search-box">
                 <span class="icon-search">🔍</span>
-                <input type="text" id="search-input" placeholder="ابحث بالاسم، البريد الإلكتروني، أو الرسالة..." oninput="filterAndRender()">
+                <input type="text" id="search-input" placeholder="Search by name, email, or message..." oninput="filterAndRender()">
             </div>
 
             <div class="filter-tabs">
-                <button class="filter-tab active" onclick="setFilter('all', this)">الكل</button>
-                <button class="filter-tab" onclick="setFilter('yes', this)">حاضرون ✅</button>
-                <button class="filter-tab" onclick="setFilter('no', this)">معتذرون ❌</button>
+                <button class="filter-tab active" onclick="setFilter('all', this)">All</button>
+                <button class="filter-tab" onclick="setFilter('yes', this)">Attending ✅</button>
+                <button class="filter-tab" onclick="setFilter('no', this)">Not Attending ❌</button>
             </div>
 
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                 <button onclick="openAddModal()" class="btn btn-gold">
                     <span>➕</span>
-                    <span>إضافة رد يدوي</span>
+                    <span>Add RSVP Manually</span>
                 </button>
                 <button onclick="exportToCSV()" class="btn btn-outline" style="background: var(--plum); color: #fff;">
                     <span>📥</span>
-                    <span>تصدير إلى Excel</span>
+                    <span>Export to Excel</span>
                 </button>
-                <button onclick="loadData()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;" title="تحديث الفوري">
+                <button onclick="loadData()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;" title="Refresh Data">
                     <span>🔄</span>
-                    <span>تحديث</span>
+                    <span>Refresh</span>
                 </button>
-                <button onclick="confirmResetDatabase()" class="btn btn-danger" title="مسح جميع البيانات والبدء من جديد">
+                <button onclick="confirmResetDatabase()" class="btn btn-danger" title="Clear all responses and start fresh">
                     <span>🗑️</span>
-                    <span>مسح القاعدة وبدء واحدة جديدة</span>
+                    <span>Clear & Start Fresh</span>
                 </button>
             </div>
         </div>
@@ -616,13 +646,13 @@
                     <thead>
                         <tr>
                             <th style="width: 50px;">#</th>
-                            <th>الاسم الكامل</th>
-                            <th>حالة الحضور</th>
-                            <th>البريد الإلكتروني</th>
-                            <th>متطلبات خاصة / استفسار</th>
-                            <th>رسالة للعروسين</th>
-                            <th>تاريخ الرد</th>
-                            <th style="width: 80px;">إجراءات</th>
+                            <th>Full Name</th>
+                            <th>Status</th>
+                            <th>Email</th>
+                            <th>Dietary Requirements</th>
+                            <th>Wishes / Message</th>
+                            <th>Response Date</th>
+                            <th style="width: 80px;">Actions</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
@@ -633,8 +663,8 @@
 
             <div id="empty-state" class="empty-state" style="display: none;">
                 <div class="icon">📭</div>
-                <h3>لا توجد ردود حالياً</h3>
-                <p>بمجرد قيام المدعوين بتأكيد حضورهم من صفحة الدعوة الرئيسية، ستظهر ردودهم هنا فوراً.</p>
+                <h3>No RSVP responses yet</h3>
+                <p>Once your invited guests confirm their attendance from the main invitation page, their responses will appear here immediately.</p>
             </div>
         </div>
     </main>
@@ -643,36 +673,36 @@
     <div id="add-modal" class="modal-overlay">
         <div class="modal-box">
             <div class="modal-header">
-                <h3>إضافة رد مدعو يدوياً</h3>
+                <h3>Add Guest RSVP Manually</h3>
                 <button onclick="closeAddModal()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">&times;</button>
             </div>
             <form id="add-form" onsubmit="handleManualSubmit(event)">
                 <div class="form-group">
-                    <label>الاسم الكامل *</label>
-                    <input type="text" id="add-name" required placeholder="مثال: أحمد محمود">
+                    <label>Full Name *</label>
+                    <input type="text" id="add-name" required placeholder="e.g. Ahmed Mahmoud">
                 </div>
                 <div class="form-group">
-                    <label>حالة الحضور *</label>
+                    <label>Attendance Status *</label>
                     <select id="add-attendance">
-                        <option value="yes">تأكيد الحضور (نعم)</option>
-                        <option value="no">اعتذار عن الحضور (لا)</option>
+                        <option value="yes">Attending (Yes)</option>
+                        <option value="no">Not Attending (No)</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>البريد الإلكتروني (اختياري)</label>
+                    <label>Email (Optional)</label>
                     <input type="email" id="add-email" placeholder="example@email.com">
                 </div>
                 <div class="form-group">
-                    <label>متطلبات خاصة (اختياري)</label>
-                    <input type="text" id="add-dietary" placeholder="مثال: حساسية طعام، مرافق، إلخ">
+                    <label>Dietary Requirements (Optional)</label>
+                    <input type="text" id="add-dietary" placeholder="e.g. Food allergy, Plus one, etc.">
                 </div>
                 <div class="form-group">
-                    <label>رسالة أو تهنئة للعروسين (اختياري)</label>
-                    <textarea id="add-message" rows="3" placeholder="اكتب تهنئة جميلة..."></textarea>
+                    <label>Message or Wishes (Optional)</label>
+                    <textarea id="add-message" rows="3" placeholder="Write a message to the bride & groom..."></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="closeAddModal()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;">إلغاء</button>
-                    <button type="submit" class="btn btn-gold">إضافة الرد</button>
+                    <button type="button" onclick="closeAddModal()" class="btn btn-outline" style="color: var(--plum); border-color: #D6CBD0;">Cancel</button>
+                    <button type="submit" class="btn btn-gold">Add Response</button>
                 </div>
             </form>
         </div>
@@ -699,16 +729,16 @@
             const badge = id('status-badge');
             const text = id('status-text');
             badge.classList.remove('error');
-            text.textContent = 'جاري التحديث...';
+            text.textContent = 'Syncing...';
 
             try {
-                const res = await fetch(getDbUrl(), { cache: 'no-cache' });
+                const res = await fetch(getDbUrl() + "?t=" + Date.now(), { cache: 'no-store' });
                 if (res.ok) {
                     const data = await res.json();
                     allResponses = Array.isArray(data) ? data : [];
                     // Keep local storage in sync
                     localStorage.setItem('rsvp_responses', JSON.stringify(allResponses));
-                    text.textContent = 'متصل بقاعدة البيانات السحابية';
+                    text.textContent = 'Connected to Global Cloud DB';
                 } else {
                     throw new Error('Server returned ' + res.status);
                 }
@@ -717,7 +747,7 @@
                 const localData = localStorage.getItem('rsvp_responses');
                 allResponses = localData ? JSON.parse(localData) : [];
                 badge.classList.add('error');
-                text.textContent = 'الوضع المحلي (نسخة احتياطية)';
+                text.textContent = 'Cloud connection failed - retrying...';
             }
 
             filterAndRender();
@@ -732,17 +762,16 @@
                 await fetch(getDbUrl(), {
                     method: 'PUT',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(newList)
                 });
                 id('status-badge').classList.remove('error');
-                id('status-text').textContent = 'متصل بقاعدة البيانات السحابية';
+                id('status-text').textContent = 'Connected to Global Cloud DB';
             } catch (err) {
                 console.error('Failed to sync to cloud DB:', err);
                 id('status-badge').classList.add('error');
-                id('status-text').textContent = 'تم الحفظ محلياً (خطأ سحابي)';
+                id('status-text').textContent = 'Cloud save failed - retrying...';
             }
         }
 
@@ -783,7 +812,7 @@
             sorted.forEach((item, index) => {
                 const tr = document.createElement('tr');
                 const isYes = item.attendance === 'yes';
-                const dateStr = item.created_at ? new Date(item.created_at).toLocaleString('ar-EG', {
+                const dateStr = item.created_at ? new Date(item.created_at).toLocaleString('en-US', {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric',
@@ -793,11 +822,11 @@
 
                 tr.innerHTML = `
                     <td><strong>${sorted.length - index}</strong></td>
-                    <td><strong style="color: var(--plum);">${escapeHtml(item.full_name || 'بدون اسم')}</strong></td>
+                    <td><strong style="color: var(--plum);">${escapeHtml(item.full_name || 'Anonymous')}</strong></td>
                     <td>
                         <span class="status-pill ${isYes ? 'yes' : 'no'}">
                             <span>${isYes ? '✅' : '❌'}</span>
-                            <span>${isYes ? 'تأكيد الحضور' : 'اعتذار'}</span>
+                            <span>${isYes ? 'Attending' : 'Not Attending'}</span>
                         </span>
                     </td>
                     <td>${escapeHtml(item.email || '-')}</td>
@@ -807,7 +836,7 @@
                     </td>
                     <td style="font-size: 0.85rem; color: #8C7A84;">${dateStr}</td>
                     <td>
-                        <button onclick="deleteResponse('${item.id || item.created_at}')" class="btn-delete" title="حذف هذا الرد">حذف</button>
+                        <button onclick="deleteResponse('${item.id || item.created_at}')" class="btn-delete" title="Delete this response">Delete</button>
                     </td>
                 `;
                 tbody.appendChild(tr);
@@ -822,18 +851,17 @@
         }
 
         function deleteResponse(idOrDate) {
-            if (!confirm('هل أنت متأكد من حذف هذا الرد من سجل المدعوين؟')) return;
+            if (!confirm('Are you sure you want to delete this RSVP response?')) return;
             const newList = allResponses.filter(item => (item.id || item.created_at) !== idOrDate);
             saveToCloud(newList);
         }
 
         async function confirmResetDatabase() {
-            const confirmed = confirm('هل أنت متأكد من رغبتك في مسح جميع ردود المدعوين الحالية وبدء قاعدة بيانات جديدة ونسخة نظيفة بالكامل؟ (لا يمكن التراجع عن هذه الخطوة)');
+            const confirmed = confirm('Are you sure you want to clear all RSVP responses and start a fresh database? (This cannot be undone)');
             if (!confirmed) return;
 
-            // Clear database as requested: "لو فيه داتا بيز محطوطة حاليا امسحها واعمل واحدة جديدة"
             await saveToCloud([]);
-            alert('تم مسح جميع الردود وبدء قاعدة بيانات جديدة وسجل نظيف بالكامل بنجاح ✅');
+            alert('All RSVP responses have been cleared and a fresh database has been started successfully ✅');
         }
 
         function openAddModal() {
@@ -870,17 +898,17 @@
 
         function exportToCSV() {
             if (allResponses.length === 0) {
-                alert('لا توجد بيانات للتصدير حالياً');
+                alert('No responses available to export');
                 return;
             }
 
-            // UTF-8 BOM so Excel opens Arabic correctly
+            // UTF-8 BOM so Excel opens correctly
             let csv = '\uFEFF';
-            csv += 'الاسم الكامل,حالة الحضور,البريد الإلكتروني,متطلبات خاصة,رسالة للعروسين,تاريخ الرد\n';
+            csv += 'Full Name,Attendance Status,Email,Dietary Requirements,Wishes / Message,Response Date\n';
 
             allResponses.forEach(item => {
                 const name = `"${(item.full_name || '').replace(/"/g, '""')}"`;
-                const status = item.attendance === 'yes' ? '"حاضر"' : '"معتذر"';
+                const status = item.attendance === 'yes' ? '"Attending"' : '"Not Attending"';
                 const email = `"${(item.email || '').replace(/"/g, '""')}"`;
                 const dietary = `"${(item.dietary_requirements || '').replace(/"/g, '""')}"`;
                 const msg = `"${(item.message || '').replace(/"/g, '""')}"`;
@@ -905,18 +933,18 @@
         function saveCustomDb() {
             const url = id('db-url-input').value.trim();
             if (!url) {
-                alert('الرجاء إدخال رابط صحيح');
+                alert('Please enter a valid URL');
                 return;
             }
             localStorage.setItem('custom_rsvp_db', url);
-            alert('تم حفظ رابط قاعدة البيانات بنجاح.');
+            alert('Database URL saved successfully.');
             loadData();
         }
 
         function resetCustomDb() {
             localStorage.removeItem('custom_rsvp_db');
             id('db-url-input').value = DEFAULT_DB_URL;
-            alert('تمت استعادة قاعدة البيانات السحابية الافتراضية بنجاح.');
+            alert('Default cloud database restored successfully.');
             loadData();
         }
 
