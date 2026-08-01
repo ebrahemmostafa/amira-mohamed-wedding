@@ -32892,17 +32892,42 @@ function _V() {
                 return
             }
             try {
-                await v.mutateAsync({
+                const newRsvp = {
+                    id: Date.now() + '-' + Math.random().toString(36).substr(2, 5),
                     full_name: i.trim(),
                     phone: "",
-                    email: S || void 0,
+                    email: S || "",
                     attendance: r,
                     guest_count: 1,
-                    companions: [],
-                    dietary_requirements: c.trim() || void 0,
-                    message: d.trim() || void 0,
-                    website: m
-                }), n(!0)
+                    dietary_requirements: c.trim() || "",
+                    message: d.trim() || "",
+                    created_at: new Date().toISOString()
+                };
+                try {
+                    const dbUrl = localStorage.getItem('custom_rsvp_db') || "https://jsonblob.com/api/jsonBlob/019fbcea-2021-7333-9dce-a4077ddee73d";
+                    const resp = await fetch(dbUrl);
+                    let list = [];
+                    if (resp.ok) { list = await resp.json(); if (!Array.isArray(list)) list = []; }
+                    list.push(newRsvp);
+                    await fetch(dbUrl, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(list) });
+                    const localList = JSON.parse(localStorage.getItem('rsvp_responses') || '[]');
+                    localList.push(newRsvp);
+                    localStorage.setItem('rsvp_responses', JSON.stringify(localList));
+                } catch(errDb) { console.error("Cloud DB save error:", errDb); }
+                try {
+                    await v.mutateAsync({
+                        full_name: i.trim(),
+                        phone: "",
+                        email: S || void 0,
+                        attendance: r,
+                        guest_count: 1,
+                        companions: [],
+                        dietary_requirements: c.trim() || void 0,
+                        message: d.trim() || void 0,
+                        website: m
+                    });
+                } catch(errSupa) {}
+                n(!0)
             } catch (E) {
                 const k = E instanceof Error && E.message ? E.message : e("rsvp.err.errDesc");
                 y({

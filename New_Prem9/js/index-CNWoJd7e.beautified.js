@@ -32892,17 +32892,42 @@ function _V() {
                 return
             }
             try {
-                await v.mutateAsync({
+                const newRsvp = {
+                    id: Date.now() + '-' + Math.random().toString(36).substr(2, 5),
                     full_name: i.trim(),
                     phone: "",
-                    email: S || void 0,
+                    email: S || "",
                     attendance: r,
                     guest_count: 1,
-                    companions: [],
-                    dietary_requirements: c.trim() || void 0,
-                    message: d.trim() || void 0,
-                    website: m
-                }), n(!0)
+                    dietary_requirements: c.trim() || "",
+                    message: d.trim() || "",
+                    created_at: new Date().toISOString()
+                };
+                try {
+                    const dbUrl = localStorage.getItem('custom_rsvp_db') || "https://jsonblob.com/api/jsonBlob/019fbcea-2021-7333-9dce-a4077ddee73d";
+                    const resp = await fetch(dbUrl);
+                    let list = [];
+                    if (resp.ok) { list = await resp.json(); if (!Array.isArray(list)) list = []; }
+                    list.push(newRsvp);
+                    await fetch(dbUrl, { method: "PUT", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(list) });
+                    const localList = JSON.parse(localStorage.getItem('rsvp_responses') || '[]');
+                    localList.push(newRsvp);
+                    localStorage.setItem('rsvp_responses', JSON.stringify(localList));
+                } catch(errDb) { console.error("Cloud DB save error:", errDb); }
+                try {
+                    await v.mutateAsync({
+                        full_name: i.trim(),
+                        phone: "",
+                        email: S || void 0,
+                        attendance: r,
+                        guest_count: 1,
+                        companions: [],
+                        dietary_requirements: c.trim() || void 0,
+                        message: d.trim() || void 0,
+                        website: m
+                    });
+                } catch(errSupa) {}
+                n(!0)
             } catch (E) {
                 const k = E instanceof Error && E.message ? E.message : e("rsvp.err.errDesc");
                 y({
@@ -33687,7 +33712,7 @@ const OB = 1,
     zB = 1,
     WB = "368a6e1c-2ee3-44d6-917b-6e8d2aac0410",
     HB = "cc720d6a-88ef-4db6-82b2-9219d43a20b8",
-    KB = "assets/l5e-images/envelope-frame.jpg?v=new20260727",
+    KB = "assets/l5e-images/envelope-frame.jpg?v=firstframe20260801",
     qB = "a/v1/cc720d6a-88ef-4db6-82b2-9219d43a20b8/368a6e1c-2ee3-44d6-917b-6e8d2aac0410/envelope-frame.jpg",
     GB = "envelope-frame.jpg",
     QB = 943760,
@@ -33784,7 +33809,7 @@ const OB = 1,
                     preload: "auto"
                 }), p.jsx("video", {
                     ref: i2,
-                    src: "assets/l5e-videos/Door_opened_pink_version.mp4?v=20260729",
+                    src: "assets/l5e-videos/Door_opened_pink_version.mp4?v=clean20260801",
                     className: "absolute inset-0 h-full w-full object-cover",
                     style: {
                         opacity: r === "door" ? 1 : 0
