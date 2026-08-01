@@ -22970,7 +22970,7 @@ function uL({
                     },
                     className: "relative flex flex-col items-center justify-center py-4 md:py-6",
                     children: [p.jsx("span", {
-                        className: "block font-display text-5xl sm:text-6xl md:text-7xl text-[hsl(var(--dusty-blue))] leading-none",
+                        className: "block font-body text-5xl sm:text-6xl md:text-7xl text-[hsl(var(--dusty-blue))] leading-none",
                         children: d(h.v)
                     }), p.jsx("span", {
                         className: "block mt-2 md:mt-3 text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[hsl(var(--plum))]/90 font-body",
