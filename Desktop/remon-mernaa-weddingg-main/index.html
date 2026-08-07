@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remon &amp; Merna — A Wedding Invitation · Aug 30, 2026</title>
+  <meta name="description" content="You are invited to celebrate the wedding of Remon &amp; Merna — August 30, 2026, in Cairo, Egypt. A cinematic love story." />
+  <meta property="og:title" content="Remon &amp; Merna — A Wedding Invitation" />
+  <meta property="og:description" content="Celebrate with us · August 30, 2026 · Cairo, Egypt." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Switch language">العربية</button>
+
+  <!-- Envelope Intro -->
+  <div class="envelope-wrapper" id="envelopeWrapper">
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="card-peek">
+        <div class="inner">
+          <p class="small" data-i18n="The grand celebration of">The grand celebration of</p>
+          <h3 data-i18n="envelope-names">Remon <em>&amp;</em> Merna</h3>
+        </div>
+      </div>
+      <div class="body-env"></div>
+      <div class="seal"><img src="assets/ChatGPT Image Jun 27, 2026, 08_02_08 PM.png" alt="Wax seal" decoding="async"></div>
+      <span class="tap" data-i18n="Tap to open">Tap to open</span>
+    </div>
+  </div>
+  <canvas id="particles"></canvas>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Heart Path on the right edge -->
+  <svg class="heart-path" width="60" viewBox="0 0 60 1000" preserveAspectRatio="none" aria-hidden="true">
+    <path id="heart-path-curve" d="M 30 0 C 84 120, -24 220, 30 320 C 84 420, -24 550, 30 650 C 84 750, -24 880, 30 1000" fill="none" stroke="var(--burgundy)" stroke-opacity="0.28" stroke-width="1.4" stroke-dasharray="3 6" />
+    <g id="heart-path-marker">
+      <path d="M8 14.5s-5.2-3.2-5.2-7.4A2.9 2.9 0 018 4.2a2.9 2.9 0 015.2 2.9c0 4.2-5.2 7.4-5.2 7.4z" fill="var(--burgundy)" />
+    </g>
+  </svg>
+
+  <!-- Floating petals -->
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <!-- Audio toggle -->
+  <button id="audio-toggle" class="audio-toggle" aria-label="Play music">
+    <span class="audio-toggle__icon" id="audio-icon">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--burgundy)"><path d="M8 5v14l11-7z" /></svg>
+    </span>
+    <span class="audio-toggle__label" id="audio-label" data-i18n="music">music</span>
+  </button>
+
+  <main class="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" data-parallax-bg>
+        <img src="assets/hero-bg.jpg" alt="Romantic rose petals on cream silk" />
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal" data-delay="2600" data-i18n="save-the-date-hero">✦  Save the date  ✦</p>
+        <h1 class="hero__title reveal" data-delay="2800">
+          Remon<span class="hero__amp">&amp;</span>Merna
+        </h1>
+        <div class="hero__rule reveal" data-delay="3400"></div>
+        <p class="hero__subtitle reveal" data-delay="3600" data-i18n="we are getting married">we are getting married</p>
+        <div class="hero__card reveal" data-delay="4000">
+          <div class="hero__card-col">
+            <span class="hero__small" data-i18n="Sunday">Sunday</span>
+            <span class="hero__big">30</span>
+            <span class="hero__small" data-i18n="Aug 2026">Aug 2026</span>
+          </div>
+          <div class="hero__divider"></div>
+          <div class="hero__card-col">
+            <span class="hero__small" data-i18n="Ceremony">Ceremony</span>
+            <span class="hero__big">6:00</span>
+            <span class="hero__small" data-i18n="in the evening">in the evening</span>
+          </div>
+          <div class="hero__divider hero__divider--md"></div>
+          <div class="hero__card-col hero__card-col--md">
+            <span class="hero__small" data-i18n="Location">Location</span>
+            <span class="hero__big hero__big--sm" data-i18n="Giza">Giza</span>
+            <span class="hero__small" data-i18n="Cairo · Egypt">Cairo · Egypt</span>
+          </div>
+        </div>
+        
+        <div class="hero__scroll reveal" data-delay="4500">
+          <span class="hero__scroll-text" data-i18n="scroll-down">scroll down</span>
+          <svg class="hero__scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PHOTO REVEAL -->
+    <section class="photo-reveal" data-parallax-section>
+      <div class="container">
+        <div class="section-head fade-in-up">
+          <p class="eyebrow" data-i18n="Two souls">Two souls</p>
+          <h2 class="display-h2" data-i18n="one journey">one journey</h2>
+        </div>
+        <div class="photo-reveal__single fade-in-up" data-parallax-y="80">
+          <img src="assets/728277892_1016595234196831_1681627395698772978_n.jpg" alt="Remon and Merna romantic dinner" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE STORY -->
+    <section class="story">
+      <div class="container">
+        <div class="section-head fade-in-up">
+          <p class="eyebrow" data-i18n="Our story">Our story</p>
+          <h2 class="display-h2"><span class="doodle-underline" data-i18n="how it began">how it began</span></h2>
+        </div>
+        <div class="story__list">
+          <article class="chapter fade-in-up">
+            <div class="chapter__media"><img src="assets/727988894_1892937321399738_5812794901894357382_n.jpg" alt="First glance" loading="lazy" /></div>
+            <div class="chapter__body">
+              <h3 class="display-h3" style="font-size: 2rem; line-height: 1.4;" data-i18n="story1">I've loved you for a lifetime in my dreams, today it becomes reality</h3>
+            </div>
+          </article>
+          <article class="chapter chapter--reverse fade-in-up">
+            <div class="chapter__media"><img src="assets/728369645_879745145182363_1172560505099690440_n.jpg" alt="Building memories" loading="lazy" /></div>
+            <div class="chapter__body">
+              <h3 class="display-h3" style="font-size: 2rem; line-height: 1.4;" data-i18n="story2">My heart had been searching for yours, long before our paths ever crossed</h3>
+            </div>
+          </article>
+          <article class="chapter fade-in-up">
+            <div class="chapter__media"><img src="assets/728462402_27925573690368474_8689696960173259662_n.jpg" alt="The big question" loading="lazy" /></div>
+            <div class="chapter__body">
+              <h3 class="display-h3" style="font-size: 2rem; line-height: 1.4;" data-i18n="story3">We are choosing each other, today and every day after</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown">
+      <div class="countdown__bg"></div>
+      <div class="container container--narrow">
+        <p class="eyebrow eyebrow--light fade-in-up" data-i18n="counting every moment">counting every moment</p>
+        <h2 class="display-h2 display-h2--light fade-in-up" data-i18n="until forever">until forever</h2>
+        <div class="countdown__grid" id="countdown">
+          <div class="countdown__cell"><div class="countdown__num" data-unit="days">00</div><div class="countdown__label" data-i18n="days">days</div></div>
+          <div class="countdown__cell"><div class="countdown__num" data-unit="hours">00</div><div class="countdown__label" data-i18n="hours">hours</div></div>
+          <div class="countdown__cell"><div class="countdown__num" data-unit="minutes">00</div><div class="countdown__label" data-i18n="minutes">minutes</div></div>
+          <div class="countdown__cell"><div class="countdown__num" data-unit="seconds">00</div><div class="countdown__label" data-i18n="seconds">seconds</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="calendar">
+      <div class="container container--narrow">
+        <div class="section-head section-head--sm fade-in-up">
+          <p class="eyebrow" data-i18n="save the date">save the date</p>
+          <h2 class="display-h2" data-i18n="August 2026">August 2026</h2>
+        </div>
+        <div class="calendar__card fade-in-up">
+          <div class="calendar__grid" id="calendar-grid"></div>
+          <div class="calendar__footer" data-i18n="calendar-footer">✦ Sunday · 6:00 pm ✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location" data-parallax-section>
+      <div class="location__bg" data-parallax-bg>
+        <img src="assets/wedding_hall_names.png" alt="Luxurious Wedding Hall with Remon and Maria" loading="lazy" />
+        <div class="location__veil"></div>
+      </div>
+      <div class="location__content">
+        <p class="eyebrow eyebrow--light fade-in-up" data-i18n="where it happens">where it happens</p>
+        
+        <div class="locations-grid fade-in-up">
+          <div class="location-item">
+            <h3 class="display-h3 display-h3--light" data-i18n="The Church">The Church</h3>
+            <p class="location-time" data-i18n="6:00 PM — 7:00 PM">6:00 PM — 7:00 PM</p>
+            <p class="location__address" style="direction: rtl;">5 ش الحجاز متفرع من ش جامعة الدول العربية<br>المهندسين, الجيزة قريب من وفد الاتحاد</p>
+            <a href="https://goo.gl/maps/Qw4KXQR7ynRgTdPt6?g_st=ac" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" data-i18n="open in maps">open in maps →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <div class="section-head fade-in-up">
+          <p class="eyebrow" data-i18n="moments">moments</p>
+          <h2 class="display-h2" data-i18n="Frozen in time">Frozen in time</h2>
+          <p class="gallery__hint" data-i18n="drag-hint">← drag to explore →</p>
+        </div>
+      </div>
+      <div class="gallery__viewport" id="gallery-viewport">
+        <div class="gallery__track" id="gallery-track"></div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp">
+      <div class="container container--narrow">
+        <div class="section-head section-head--sm fade-in-up">
+          <p class="eyebrow" data-i18n="be with us">be with us</p>
+          <h2 class="display-h2" data-i18n="Kindly reply">Kindly reply</h2>
+        </div>
+        <form id="rsvp-form" class="rsvp__form fade-in-up">
+          <div class="field">
+            <label data-i18n="Your name">Your name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="field">
+            <label data-i18n="Email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="field">
+            <label data-i18n="Will you attend?">Will you attend?</label>
+            <div class="radio-group">
+              <label class="radio">
+                <input type="radio" name="attend" value="yes" checked />
+                <span data-i18n="Joyfully accept">Joyfully accept</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="attend" value="no" />
+                <span data-i18n="Regretfully decline">Regretfully decline</span>
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <label data-i18n="Number of guests">Number of guests</label>
+            <input type="number" name="guests" min="1" max="10" />
+          </div>
+          <div class="field">
+            <label data-i18n="A note for us">A note for us</label>
+            <textarea name="note" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" id="rsvp-submit">
+            <span id="rsvp-submit-label" data-i18n="send rsvp">send rsvp</span>
+          </button>
+        </form>
+        <div class="rsvp__success" id="rsvp-success" hidden>
+          <div class="rsvp__heart">♥</div>
+          <h3 class="display-h3" data-i18n="rsvp-thanks">Thank you, beautifully received.</h3>
+          <p data-i18n="rsvp-see-you">We can't wait to see you in August.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final">
+      <div class="container container--narrow fade-in-up">
+        <p class="eyebrow" data-i18n="with all our love">with all our love</p>
+        <h2 class="final__title" data-i18n="final-title">We can't wait<br /><span class="text-gradient-rose">to celebrate with you.</span></h2>
+        <div class="final__rule"></div>
+        <p class="final__signature" data-i18n="final-signature">Remon &amp; Merna</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col" data-i18n="footer-names">remon &amp; merna</div>
+        <div class="footer__col footer__col--center" data-i18n="footer-tagline">forever, beginning august thirty</div>
+        <div class="footer__col" data-i18n="footer-location">cairo · 2026</div>
+      </div>
+      <div style="text-align: center; font-size: 0.8rem; margin-top: 1.5rem; opacity: 0.7;">
+        Made with love by <a href="https://ajwa2-collection.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Ajwaa</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/lang.js"></script>
+</body>
+</html>
